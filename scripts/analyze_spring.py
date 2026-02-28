@@ -12,7 +12,7 @@ import urllib.parse
 import urllib.request
 from collections import defaultdict
 from dataclasses import dataclass
-from datetime import date, datetime
+from datetime import date, datetime, timedelta
 from html import escape
 from pathlib import Path
 from typing import Dict, List, Optional
@@ -205,6 +205,21 @@ def render_species_pages(project_root: Path, output: Dict) -> None:
     species_dir.mkdir(parents=True, exist_ok=True)
     for species in output["indicator_species"]:
         page_path = species_dir / f"{species['slug']}.html"
+        zones = species.get("zones", [])
+        expected_doy = None
+        if zones:
+            numer = 0.0
+            denom = 0.0
+            for z in zones:
+                weight = max(1, int(z.get("baseline_years", 1))) * max(1, int(z.get("current_obs", 0)))
+                numer += float(z.get("baseline_doy", 0.0)) * weight
+                denom += weight
+            if denom > 0:
+                expected_doy = numer / denom
+        expected_date_text = "Unavailable"
+        if expected_doy is not None:
+            expected_date = date(output["years"]["current_year"], 1, 1) + timedelta(days=max(0, int(round(expected_doy)) - 1))
+            expected_date_text = expected_date.strftime("%B %-d")
         photo_html = (
             f'<img src="{escape(species["photo_url"])}" alt="{escape(species["common_name"])}" '
             'style="max-width:100%;border-radius:12px;border:1px solid #ddd;" />'
@@ -258,6 +273,7 @@ def render_species_pages(project_root: Path, output: Dict) -> None:
       <p class="meta"><em>{escape(species['species'])}</em></p>
       {photo_html}
       <p class="meta">Status: <strong>{escape(species['status'])}</strong> | Anomaly: {species['anomaly_days']} days | Data granularity: {escape(species['granularity'])}</p>
+      <p class="meta"><strong>Expected flowering onset:</strong> {escape(expected_date_text)} (baseline from prior years)</p>
       <p><a href="{escape(species['taxon_url'])}" target="_blank" rel="noopener">View taxon on iNaturalist</a></p>
       <p><a href="{escape(all_search_url)}" target="_blank" rel="noopener">View all {year} flowering observations in Washington</a></p>
       <h2>This Year's Flowering Observations</h2>
