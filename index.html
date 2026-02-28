@@ -118,8 +118,8 @@
     .status-chip.pending { color: #fff; }
     .small { color: var(--muted); font-size: 0.88rem; }
     .thumb { width: 64px; height: 64px; object-fit: cover; border-radius: 10px; border: 1px solid #ddd; display:block; }
-    .species-link { color: #245f39; text-decoration: none; }
-    .species-link:hover { text-decoration: underline; }
+    .species-link { color: #245f39; text-decoration: underline; font-weight: 700; }
+    .species-link:hover { color: #184b2b; }
   </style>
 </head>
 <body>
@@ -216,7 +216,7 @@
       document.getElementById("species-table").innerHTML =
         `<table>
           <thead>
-            <tr><th>Photo</th><th>Species</th><th>Status</th><th>Anomaly</th><th>Obs (${years.current_year})</th><th>Links</th></tr>
+            <tr><th>Photo</th><th>Species</th><th>Status</th><th>Anomaly</th><th>Obs (${years.current_year})</th></tr>
           </thead>
           <tbody>
             ${data.indicator_species.map(s => `
@@ -225,9 +225,8 @@
                 <td><a class="species-link" href="./species/${s.slug}.html"><strong>${s.common_name}</strong></a><br><span class="small"><em>${s.species}</em></span></td>
                 <td class="${cls(s.status)}">${s.status}</td>
                 <td>${s.anomaly_days} d</td>
-                <td>${s.current_obs_total}</td>
                 <td>${s.has_current_data && s.current_year_observations?.length
-                  ? `<a href="https://www.inaturalist.org/observations?place_id=46&taxon_id=${s.taxon_id}&quality_grade=research&term_id=12&term_value_id=13&d1=${years.current_year}-01-01&d2=${years.current_year}-12-31" target="_blank" rel="noopener">All ${s.current_obs_total} obs</a>`
+                  ? `<a href="https://www.inaturalist.org/observations?place_id=46&taxon_id=${s.taxon_id}&quality_grade=research&term_id=12&term_value_id=13&d1=${years.current_year}-01-01&d2=${years.current_year}-12-31" target="_blank" rel="noopener">${s.current_obs_total}</a>`
                   : `<span class="small">No ${years.current_year} bloom yet</span>`}</td>
               </tr>`).join("")}
           </tbody>
