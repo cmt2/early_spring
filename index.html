@@ -56,6 +56,11 @@
       color: var(--muted);
       font-size: 1rem;
     }
+    .updated {
+      margin: 0.35rem 0 0;
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
 
     .status-chip {
       display: inline-block;
@@ -122,6 +127,7 @@
     <section class="hero">
       <h1>Washington Spring Bloom Watch</h1>
       <p class="sub" id="subtitle">Loading current bloom status...</p>
+      <p class="updated" id="updated-at">Last updated: --</p>
       <div id="status-chip" class="status-chip">Loading</div>
     </section>
 
@@ -163,6 +169,7 @@
       }
       const overall = data.overall;
       const years = data.years;
+      const generated = data.generated_at ? new Date(data.generated_at) : null;
 
       const chip = document.getElementById("status-chip");
       chip.textContent = overall.status + " spring";
@@ -177,6 +184,10 @@
         `${data.analysis_date}: ${overall.interpretation} ` +
         `Overall anomaly: ${overall.anomaly_days} days. ` +
         `${overall.species_with_signal} of ${overall.species_count} indicator species have current-year bloom signal.`;
+      document.getElementById("updated-at").textContent =
+        generated && !Number.isNaN(generated.getTime())
+          ? `Last updated: ${generated.toLocaleString()}`
+          : "Last updated: unavailable";
 
       document.getElementById("zone-table").innerHTML =
         `<table>

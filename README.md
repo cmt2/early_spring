@@ -47,6 +47,16 @@ git push -u origin main
 4. After the `Deploy GitHub Pages` workflow succeeds, your site will be live at:
    - `https://<your-username>.github.io/<your-repo>/`
 
+## Automatic Daily Refresh
+
+- The workflow `.github/workflows/refresh-data.yml` runs daily and can also be run manually.
+- It regenerates:
+  - `data/spring_status.json`
+  - `data/spring_status.js`
+  - `species/*.html`
+- If files changed, it commits to `main`, which triggers Pages redeploy.
+- The homepage shows `Last updated` using the dataset `generated_at` timestamp.
+
 ## Notes
 
 - This approach depends on observer effort and annotation behavior.
