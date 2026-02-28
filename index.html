@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Washington Spring Bloom Watch</title>
+  <style>
+    :root {
+      --bg: #f4f2ea;
+      --ink: #1f2e22;
+      --accent: #3d7042;
+      --accent-2: #c4673a;
+      --panel: #fffdf8;
+      --muted: #6c766e;
+      --early: #2e7d32;
+      --normal: #40658f;
+      --late: #b44d2f;
+      --pending: #7b7b7b;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      background:
+        radial-gradient(circle at 20% 0%, #dce7d4 0 25%, transparent 25%),
+        radial-gradient(circle at 85% 15%, #f2d9b8 0 18%, transparent 18%),
+        var(--bg);
+      min-height: 100vh;
+    }
+
+    .container {
+      width: min(1100px, 92vw);
+      margin: 2rem auto 4rem;
+    }
+
+    .hero {
+      background: linear-gradient(130deg, #fdfcf6, #edf4e8);
+      border: 2px solid #d7decf;
+      border-radius: 20px;
+      padding: 1.5rem;
+      box-shadow: 0 8px 18px rgba(40, 63, 45, 0.08);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(1.6rem, 4vw, 2.7rem);
+      line-height: 1.1;
+      letter-spacing: 0.02em;
+    }
+
+    .sub {
+      margin: 0.6rem 0 0;
+      color: var(--muted);
+      font-size: 1rem;
+    }
+
+    .status-chip {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.45rem 0.9rem;
+      border-radius: 999px;
+      color: #fff;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-size: 0.8rem;
+    }
+
+    .grid {
+      margin-top: 1rem;
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+
+    .panel {
+      background: var(--panel);
+      border: 1px solid #dfddd4;
+      border-radius: 16px;
+      padding: 1rem;
+    }
+
+    h2 {
+      margin: 0 0 0.6rem;
+      font-size: 1.1rem;
+      color: var(--accent);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.92rem;
+    }
+
+    th, td {
+      border-bottom: 1px solid #ece8dd;
+      padding: 0.45rem 0.2rem;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th { color: #4a534b; }
+    .late { color: var(--late); font-weight: 700; }
+    .early { color: var(--early); font-weight: 700; }
+    .normal { color: var(--normal); font-weight: 700; }
+    .pending { color: var(--pending); font-weight: 700; }
+    .status-chip.early,
+    .status-chip.late,
+    .status-chip.normal,
+    .status-chip.pending { color: #fff; }
+    .small { color: var(--muted); font-size: 0.88rem; }
+    .thumb { width: 64px; height: 64px; object-fit: cover; border-radius: 10px; border: 1px solid #ddd; display:block; }
+    .species-link { color: #245f39; text-decoration: none; }
+    .species-link:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <section class="hero">
+      <h1>Washington Spring Bloom Watch</h1>
+      <p class="sub" id="subtitle">Loading current bloom status...</p>
+      <div id="status-chip" class="status-chip">Loading</div>
+    </section>
+
+    <section class="grid">
+      <article class="panel">
+        <h2>By Geography</h2>
+        <div id="zone-table"></div>
+      </article>
+      <article class="panel">
+        <h2>Method</h2>
+        <div id="method"></div>
+      </article>
+    </section>
+
+    <section class="panel" style="margin-top:1rem;">
+      <h2>Indicator Species (~20)</h2>
+      <div id="species-table"></div>
+    </section>
+  </main>
+
+  <script src="./data/spring_status.js"></script>
+  <script>
+    function cls(v) {
+      if (v === "early") return "early";
+      if (v === "late") return "late";
+      if (v === "pending") return "pending";
+      return "normal";
+    }
+
+    function fmtDoy(doy) {
+      return Number.isFinite(doy) ? Math.round(doy) : "-";
+    }
+
+    function render() {
+      const data = window.SPRING_STATUS;
+      if (!data) {
+        document.getElementById("subtitle").textContent = "No data file found. Run scripts/analyze_spring.py first.";
+        return;
+      }
+      const overall = data.overall;
+      const years = data.years;
+
+      const chip = document.getElementById("status-chip");
+      chip.textContent = overall.status + " spring";
+      chip.classList.add(cls(overall.status));
+      chip.style.background = overall.status === "early"
+        ? "var(--early)"
+        : overall.status === "late"
+        ? "var(--late)"
+        : "var(--normal)";
+
+      document.getElementById("subtitle").textContent =
+        `${data.analysis_date}: ${overall.interpretation} ` +
+        `Overall anomaly: ${overall.anomaly_days} days. ` +
+        `${overall.species_with_signal} of ${overall.species_count} indicator species have current-year bloom signal.`;
+
+      document.getElementById("zone-table").innerHTML =
+        `<table>
+          <thead>
+            <tr><th>Zone</th><th>Status</th><th>Anomaly (days)</th><th>Species</th></tr>
+          </thead>
+          <tbody>
+            ${data.zone_summary.map(z => `
+              <tr>
+                <td>${z.zone}</td>
+                <td class="${cls(z.status)}">${z.status}</td>
+                <td>${z.anomaly_days}</td>
+                <td>${z.species_count}</td>
+              </tr>`).join("")}
+          </tbody>
+        </table>`;
+
+      document.getElementById("method").innerHTML = `
+        <p class="small"><strong>Baseline:</strong> ${years.baseline_start}-${years.baseline_end}</p>
+        <p class="small"><strong>Current:</strong> ${years.current_year}</p>
+        <p class="small"><strong>Onset metric:</strong> ${data.method.onset_metric}</p>
+        <p class="small"><strong>Geography:</strong> ${data.method.geography_buckets}</p>
+        <p class="small"><strong>Pending rule:</strong> Species with no current-year flowering yet are shown as pending unless already past expected onset.</p>
+      `;
+
+      document.getElementById("species-table").innerHTML =
+        `<table>
+          <thead>
+            <tr><th>Photo</th><th>Species</th><th>Status</th><th>Anomaly</th><th>Obs (${years.current_year})</th><th>Links</th></tr>
+          </thead>
+          <tbody>
+            ${data.indicator_species.map(s => `
+              <tr>
+                <td>${s.photo_url ? `<img class="thumb" src="${s.photo_url}" alt="${s.common_name}" />` : `<span class="small">No photo</span>`}</td>
+                <td><a class="species-link" href="./species/${s.slug}.html"><strong>${s.common_name}</strong></a><br><span class="small"><em>${s.species}</em></span></td>
+                <td class="${cls(s.status)}">${s.status}</td>
+                <td>${s.anomaly_days} d</td>
+                <td>${s.current_obs_total}</td>
+                <td>${s.has_current_data && s.current_year_observations?.length
+                  ? `<a href="https://www.inaturalist.org/observations?place_id=46&taxon_id=${s.taxon_id}&quality_grade=research&term_id=12&term_value_id=13&d1=${years.current_year}-01-01&d2=${years.current_year}-12-31" target="_blank" rel="noopener">All ${s.current_obs_total} obs</a>`
+                  : `<span class="small">No ${years.current_year} bloom yet</span>`}</td>
+              </tr>`).join("")}
+          </tbody>
+        </table>`;
+    }
+    render();
+  </script>
+</body>
+</html>
