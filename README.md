@@ -13,6 +13,61 @@ This project estimates whether Washington's spring is **early**, **normal**, or 
 - Produces a statewide spring status and zone-level statuses
 - Marks species as `pending` when they have robust baseline history but no current-year flowering observations yet
 
+## How "Normal Bloom Onset" Is Estimated
+
+This project uses a robust onset metric designed to be less sensitive to outlier early observations.
+
+1. For each species and geography group, collect flowering observations by year.
+2. For each year, compute that year's bloom onset as the **20th percentile day-of-year (DOY)** of flowering observations.
+   - Example: if most flowers are seen in April but a few are seen in March, the 20th percentile is earlier than median but less noisy than minimum date.
+3. Build the baseline from the prior 9 years (currently `2017-2025` when current year is `2026`):
+   - Baseline onset = **median** of yearly onset values across baseline years.
+4. Compute current-year onset the same way (20th percentile DOY), then:
+   - `anomaly_days = current_onset_doy - baseline_onset_doy`
+   - Negative anomaly means earlier than normal.
+
+### Geography handling
+
+Bloom timing is estimated separately by geography bucket:
+
+- Cascade side: `east` or `west` (coarse longitude approximation of Cascade crest)
+- Elevation band:
+  - `low` `<500m`
+  - `mid` `500-1200m`
+  - `high` `>1200m`
+  - `unknown` (no elevation in record)
+
+Primary analysis uses `side + elevation` zones.  
+If that is too sparse for a species, it falls back to:
+
+1. `side` only (`east` / `west`)
+2. `statewide`
+
+### Data sufficiency rules
+
+- A baseline year contributes only if it has at least a minimum number of observations in that group.
+- A species/group is kept only if it has enough baseline years (minimum coverage requirement).
+- This avoids unstable baselines from very sparse records.
+
+### Status thresholds
+
+Species and aggregate spring status use these anomaly cutoffs:
+
+- `early`: anomaly `<= -7` days
+- `normal`: between `-7` and `+7` days
+- `late`: anomaly `>= +7` days
+
+If no current-year flowering observations exist for a species:
+
+- `pending` if we are not yet past expected bloom onset
+- `late` if current date is already sufficiently past expected onset
+
+### Aggregation
+
+- Group-level anomalies are combined to species-level with weighted averaging.
+- Species-level anomalies are combined into overall Washington status with weighting by data support.
+- The dashboard also reports how many indicator species currently have a live-year bloom signal.
+
 ## Run
 
 ```bash
