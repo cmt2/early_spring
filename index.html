@@ -229,6 +229,16 @@
       const years = data.years;
       const generated = data.generated_at ? new Date(data.generated_at) : null;
       const longTermBySpecies = {};
+      const statusRank = { early: 0, normal: 1, late: 2, pending: 3 };
+      const speciesSorted = [...data.indicator_species].sort((a, b) => {
+        const aRank = statusRank[a.status] ?? 99;
+        const bRank = statusRank[b.status] ?? 99;
+        if (aRank !== bRank) return aRank - bRank;
+        if ((b.current_obs_total ?? 0) !== (a.current_obs_total ?? 0)) {
+          return (b.current_obs_total ?? 0) - (a.current_obs_total ?? 0);
+        }
+        return (a.common_name || "").localeCompare(b.common_name || "");
+      });
 
       const chip = document.getElementById("status-chip");
       chip.textContent = overall.status + " spring";
@@ -320,7 +330,7 @@
             <tr><th>Photo</th><th>Species</th><th>Status</th><th>Anomaly</th><th>Long-term anomaly</th><th>Obs (${years.current_year})</th></tr>
           </thead>
           <tbody>
-            ${data.indicator_species.map(s => `
+            ${speciesSorted.map(s => `
               <tr>
                 <td>${s.photo_url ? `<img class="thumb" src="${s.photo_url}" alt="${s.common_name}" />` : `<span class="small">No photo</span>`}</td>
                 <td><a class="species-link" href="./species/${s.slug}.html"><strong>${s.common_name}</strong></a><br><span class="small"><em>${s.species}</em></span></td>
