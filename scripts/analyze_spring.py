@@ -15,7 +15,7 @@ from dataclasses import dataclass
 from datetime import date, datetime, timedelta
 from html import escape
 from pathlib import Path
-from typing import Dict, List, Optional
+from typing import Dict, List, Optional, Tuple
 from urllib.error import HTTPError, URLError
 
 API_BASE = "https://api.inaturalist.org/v1"
@@ -28,6 +28,10 @@ CURRENT_YEAR = CURRENT_DATE.year
 BASELINE_START_YEAR = CURRENT_YEAR - 9
 BASELINE_END_YEAR = CURRENT_YEAR - 1
 MAX_RECORDS_PER_SPECIES = 1400
+DEM_API_BASE = "https://api.opentopodata.org/v1/srtm90m"
+DEM_CACHE_FILENAME = "elevation_cache.json"
+DEM_COORD_PRECISION = 3
+DEM_MAX_NEW_LOOKUPS_PER_RUN = 1500
 
 # Candidate native/common spring indicators spanning WA climates.
 CANDIDATE_SPECIES = [
@@ -193,6 +197,127 @@ def fetch_species_observations(species: str, taxon_id: int) -> List[Observation]
             break
         page += 1
     return observations
+
+
+def load_elevation_cache(path: Path) -> Dict[str, Optional[float]]:
+    if not path.exists():
+        return {}
+    try:
+        raw = json.loads(path.read_text(encoding="utf-8"))
+    except (json.JSONDecodeError, OSError):
+        return {}
+    if not isinstance(raw, dict):
+        return {}
+    cache: Dict[str, Optional[float]] = {}
+    for k, v in raw.items():
+        if v is None:
+            cache[str(k)] = None
+        else:
+            try:
+                cache[str(k)] = float(v)
+            except (TypeError, ValueError):
+                cache[str(k)] = None
+    return cache
+
+
+def save_elevation_cache(path: Path, cache: Dict[str, Optional[float]]) -> None:
+    path.write_text(json.dumps(cache, sort_keys=True), encoding="utf-8")
+
+
+def dem_coord_key(lat: float, lon: float) -> str:
+    return f"{round(lat, DEM_COORD_PRECISION):.{DEM_COORD_PRECISION}f},{round(lon, DEM_COORD_PRECISION):.{DEM_COORD_PRECISION}f}"
+
+
+def fetch_dem_elevation_m(lat: float, lon: float) -> Optional[float]:
+    params = {"locations": f"{lat:.6f},{lon:.6f}"}
+    url = f"{DEM_API_BASE}?{urllib.parse.urlencode(params)}"
+    req = urllib.request.Request(url, headers={"User-Agent": "wa-spring-indicator/1.0"})
+    for attempt in range(1, 6):
+        try:
+            with urllib.request.urlopen(req, timeout=30) as response:
+                payload = json.load(response)
+            results = payload.get("results", [])
+            if not results:
+                return None
+            elev = results[0].get("elevation")
+            if elev is None:
+                return None
+            return float(elev)
+        except HTTPError as err:
+            if err.code in (429, 500, 502, 503, 504) and attempt < 5:
+                time.sleep(1.5 * attempt)
+                continue
+            return None
+        except (URLError, TimeoutError, ValueError, json.JSONDecodeError):
+            if attempt < 5:
+                time.sleep(1.2 * attempt)
+                continue
+            return None
+
+
+def fetch_dem_elevation_batch(coords: List[Tuple[float, float]]) -> List[Optional[float]]:
+    if not coords:
+        return []
+    locations = "|".join(f"{lat:.6f},{lon:.6f}" for lat, lon in coords)
+    params = {"locations": locations}
+    url = f"{DEM_API_BASE}?{urllib.parse.urlencode(params)}"
+    req = urllib.request.Request(url, headers={"User-Agent": "wa-spring-indicator/1.0"})
+    for attempt in range(1, 6):
+        try:
+            with urllib.request.urlopen(req, timeout=45) as response:
+                payload = json.load(response)
+            results = payload.get("results", [])
+            if len(results) != len(coords):
+                return [None for _ in coords]
+            out: List[Optional[float]] = []
+            for result in results:
+                elev = result.get("elevation")
+                if elev is None:
+                    out.append(None)
+                else:
+                    out.append(float(elev))
+            return out
+        except HTTPError as err:
+            if err.code in (429, 500, 502, 503, 504) and attempt < 5:
+                time.sleep(1.5 * attempt)
+                continue
+            return [None for _ in coords]
+        except (URLError, TimeoutError, ValueError, json.JSONDecodeError):
+            if attempt < 5:
+                time.sleep(1.2 * attempt)
+                continue
+            return [None for _ in coords]
+
+
+def fill_missing_elevations_from_dem(
+    observations: List[Observation],
+    cache: Dict[str, Optional[float]],
+    max_new_lookups: int,
+) -> Tuple[int, int]:
+    missing_keys = sorted({dem_coord_key(obs.lat, obs.lon) for obs in observations if obs.elev_m is None})
+    to_query = [k for k in missing_keys if k not in cache][:max_new_lookups]
+    new_lookups = 0
+    chunk_size = 80
+    for i in range(0, len(to_query), chunk_size):
+        chunk_keys = to_query[i:i + chunk_size]
+        coords = []
+        for key in chunk_keys:
+            lat_s, lon_s = key.split(",")
+            coords.append((float(lat_s), float(lon_s)))
+        elevations = fetch_dem_elevation_batch(coords)
+        for key, elev in zip(chunk_keys, elevations):
+            cache[key] = round(elev, 1) if elev is not None else None
+            new_lookups += 1
+
+    filled = 0
+    for obs in observations:
+        if obs.elev_m is not None:
+            continue
+        cached = cache.get(dem_coord_key(obs.lat, obs.lon))
+        if cached is not None:
+            obs.elev_m = cached
+            filled += 1
+    return new_lookups, filled
 
 
 def slugify(text: str) -> str:
@@ -550,6 +675,9 @@ def main() -> None:
     project_root = Path(__file__).resolve().parents[1]
     data_dir = project_root / "data"
     data_dir.mkdir(parents=True, exist_ok=True)
+    elevation_cache_path = data_dir / DEM_CACHE_FILENAME
+    elevation_cache = load_elevation_cache(elevation_cache_path)
+    remaining_dem_lookups = DEM_MAX_NEW_LOOKUPS_PER_RUN
 
     species_summaries: List[Dict] = []
     unresolved_species: List[str] = []
@@ -567,6 +695,19 @@ def main() -> None:
         photo_url = resolved["photo_url"]
         print(f"  - fetching observations (taxon {taxon_id})", flush=True)
         observations = fetch_species_observations(species, taxon_id)
+        if remaining_dem_lookups > 0:
+            new_lookups, filled = fill_missing_elevations_from_dem(
+                observations,
+                elevation_cache,
+                max_new_lookups=remaining_dem_lookups,
+            )
+            remaining_dem_lookups -= new_lookups
+            if new_lookups or filled:
+                print(
+                    f"  - DEM elevation: {filled} filled from cache/API, {new_lookups} new lookups "
+                    f"(remaining budget {remaining_dem_lookups})",
+                    flush=True,
+                )
         summary = summarize_species(
             species,
             common_name,
@@ -607,6 +748,7 @@ def main() -> None:
                 "Based on iNaturalist research-grade flowering annotations in Washington.",
                 "Observation effort is uneven across regions and species.",
                 "Cascade split uses a coarse longitude approximation.",
+                "Missing elevations are estimated from SRTM90m DEM via OpenTopoData and cached.",
             ],
         },
         "overall": overall,
@@ -622,6 +764,7 @@ def main() -> None:
         "window.SPRING_STATUS = " + json.dumps(output, separators=(",", ":")) + ";\n",
         encoding="utf-8",
     )
+    save_elevation_cache(elevation_cache_path, elevation_cache)
     render_species_pages(project_root, output)
     print(f"Wrote {json_path}")
     print(f"Wrote {js_path}")

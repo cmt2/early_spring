@@ -12,6 +12,7 @@ This project estimates whether Washington's spring is **early**, **normal**, or 
 - Selects ~20 indicator species from a larger candidate pool based on usable geographic coverage and current-year data
 - Produces a statewide spring status and zone-level statuses
 - Marks species as `pending` when they have robust baseline history but no current-year flowering observations yet
+- Fills missing observation elevation from SRTM90m DEM (via OpenTopoData) and stores cached lookups in `data/elevation_cache.json`
 
 ## How "Normal Bloom Onset" Is Estimated
 
