@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Long-Term Context | Washington Spring Bloom Watch</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      background: #f4f2ea;
+      color: #1f2e22;
+    }
+    .wrap {
+      width: min(1050px, 92vw);
+      margin: 1.5rem auto 3rem;
+    }
+    .panel {
+      background: #fffdf8;
+      border: 1px solid #ddd7c8;
+      border-radius: 16px;
+      padding: 1rem 1.2rem;
+      margin-bottom: 1rem;
+    }
+    h1, h2 { margin: 0 0 0.6rem; }
+    .small { color: #657067; }
+    a { color: #245f39; }
+    img { max-width: 100%; border: 1px solid #ddd; border-radius: 10px; background: #fff; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <p><a href="./index.html">Back to main dashboard</a></p>
+
+    <section class="panel">
+      <h1>Long-Term Context: iNaturalist vs Herbarium Baseline</h1>
+      <p>
+        This plot compares recent spring onset behavior (2017-2025, from iNaturalist flowering observations)
+        to a longer-term historical baseline from herbarium specimens (1950-2000).
+      </p>
+      <p>
+        The chart is normalized so that <strong>0 = herbarium baseline</strong>. Values below 0 indicate
+        earlier onset relative to that historical baseline; values above 0 indicate later onset.
+      </p>
+      <p class="small">
+        iNaturalist data are high-volume and recent but observer-driven. Herbarium data are sparse and historical,
+        collected with different goals and uneven sampling through time and space. Both sources carry bias, but
+        together they provide stronger context than either alone.
+      </p>
+    </section>
+
+    <section class="panel">
+      <h2>Baseline Trend Relative To Herbarium 1950-2000</h2>
+      <img src="./data/baseline_trend_herbarium_zero.svg" alt="Trend relative to herbarium baseline" />
+    </section>
+
+    <section class="panel">
+      <h2>Data Source Reference</h2>
+      <p>
+        Consortium of Pacific Northwest Herbaria (CPNWH):<br />
+        <a href="https://www.pnwherbaria.org/" target="_blank" rel="noopener">https://www.pnwherbaria.org/</a>
+      </p>
+      <p class="small">
+        Herbarium records were filtered to Washington and flowering phenology terms containing "flower"/"flowering".
+      </p>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,73 @@
+{
+  "generated_at": "2026-03-02T05:48:40Z",
+  "baseline_years": {
+    "start": 2017,
+    "end": 2025
+  },
+  "species_used": 20,
+  "yearly_aggregate": [
+    {
+      "year": 2017,
+      "species_count": 18,
+      "mean_normalized_anomaly_days": 4.8,
+      "mean_zscore": 0.685
+    },
+    {
+      "year": 2018,
+      "species_count": 19,
+      "mean_normalized_anomaly_days": 2.595,
+      "mean_zscore": 0.205
+    },
+    {
+      "year": 2019,
+      "species_count": 18,
+      "mean_normalized_anomaly_days": -0.372,
+      "mean_zscore": -0.069
+    },
+    {
+      "year": 2020,
+      "species_count": 19,
+      "mean_normalized_anomaly_days": -1.3,
+      "mean_zscore": -0.145
+    },
+    {
+      "year": 2021,
+      "species_count": 19,
+      "mean_normalized_anomaly_days": -1.332,
+      "mean_zscore": -0.177
+    },
+    {
+      "year": 2022,
+      "species_count": 19,
+      "mean_normalized_anomaly_days": -2.847,
+      "mean_zscore": -0.272
+    },
+    {
+      "year": 2023,
+      "species_count": 19,
+      "mean_normalized_anomaly_days": 6.763,
+      "mean_zscore": 1.063
+    },
+    {
+      "year": 2024,
+      "species_count": 19,
+      "mean_normalized_anomaly_days": -6.479,
+      "mean_zscore": -1.036
+    },
+    {
+      "year": 2025,
+      "species_count": 19,
+      "mean_normalized_anomaly_days": -1.047,
+      "mean_zscore": -0.257
+    }
+  ],
+  "linear_trend": {
+    "slope_days_per_year": -0.6314,
+    "intercept": 1276.2472
+  },
+  "herbarium_1950_2000_comparison": {
+    "species_used": 20,
+    "mean_comparable_anomaly_days": 3.425,
+    "notes": "Computed from CPNWH WA records with Phenology containing 'flower'; species onset metric is 20th percentile DOY over 1950-2000 records."
+  }
+}

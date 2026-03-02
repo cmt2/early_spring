@@ -1,0 +1,170 @@
+species,common_name,taxon_id,year,onset_doy,species_median_doy,anomaly_days,zscore
+Acer macrophyllum,bigleaf maple,48227,2017,104.6,101.6,3.0,0.461
+Acer macrophyllum,bigleaf maple,48227,2018,93.2,101.6,-8.4,-1.29
+Acer macrophyllum,bigleaf maple,48227,2019,101.6,101.6,0.0,0.0
+Acer macrophyllum,bigleaf maple,48227,2020,105.4,101.6,3.8,0.584
+Acer macrophyllum,bigleaf maple,48227,2021,105.8,101.6,4.2,0.645
+Acer macrophyllum,bigleaf maple,48227,2022,96.0,101.6,-5.6,-0.86
+Acer macrophyllum,bigleaf maple,48227,2023,111.0,101.6,9.4,1.444
+Acer macrophyllum,bigleaf maple,48227,2024,93.4,101.6,-8.2,-1.26
+Acer macrophyllum,bigleaf maple,48227,2025,94.6,101.6,-7.0,-1.075
+Achlys triphylla,vanilla leaf,75263,2017,130.8,132.0,-1.2,-0.175
+Achlys triphylla,vanilla leaf,75263,2018,134.8,132.0,2.8,0.407
+Achlys triphylla,vanilla leaf,75263,2019,120.0,132.0,-12.0,-1.746
+Achlys triphylla,vanilla leaf,75263,2020,132.0,132.0,0.0,0.0
+Achlys triphylla,vanilla leaf,75263,2021,124.0,132.0,-8.0,-1.164
+Achlys triphylla,vanilla leaf,75263,2022,121.4,132.0,-10.6,-1.542
+Achlys triphylla,vanilla leaf,75263,2023,136.8,132.0,4.8,0.698
+Achlys triphylla,vanilla leaf,75263,2024,136.6,132.0,4.6,0.669
+Achlys triphylla,vanilla leaf,75263,2025,137.2,132.0,5.2,0.757
+Alnus rubra,Red Alder,56034,2020,93.0,65.2,27.8,1.592
+Alnus rubra,Red Alder,56034,2022,65.2,65.2,0.0,0.0
+Alnus rubra,Red Alder,56034,2023,62.4,65.2,-2.8,-0.16
+Alnus rubra,Red Alder,56034,2024,87.0,65.2,21.8,1.248
+Alnus rubra,Red Alder,56034,2025,51.6,65.2,-13.6,-0.779
+Amelanchier alnifolia,Saskatoon,75415,2017,119.8,114.0,5.8,1.348
+Amelanchier alnifolia,Saskatoon,75415,2018,112.2,114.0,-1.8,-0.418
+Amelanchier alnifolia,Saskatoon,75415,2019,110.0,114.0,-4.0,-0.93
+Amelanchier alnifolia,Saskatoon,75415,2020,112.0,114.0,-2.0,-0.465
+Amelanchier alnifolia,Saskatoon,75415,2021,107.8,114.0,-6.2,-1.441
+Amelanchier alnifolia,Saskatoon,75415,2022,115.4,114.0,1.4,0.325
+Amelanchier alnifolia,Saskatoon,75415,2023,120.0,114.0,6.0,1.394
+Amelanchier alnifolia,Saskatoon,75415,2024,118.0,114.0,4.0,0.93
+Amelanchier alnifolia,Saskatoon,75415,2025,114.0,114.0,0.0,0.0
+Asarum caudatum,Western Wild Ginger,52858,2017,128.0,128.0,0.0,0.0
+Asarum caudatum,Western Wild Ginger,52858,2018,161.4,128.0,33.4,1.934
+Asarum caudatum,Western Wild Ginger,52858,2019,153.4,128.0,25.4,1.471
+Asarum caudatum,Western Wild Ginger,52858,2020,113.0,128.0,-15.0,-0.869
+Asarum caudatum,Western Wild Ginger,52858,2021,111.0,128.0,-17.0,-0.985
+Asarum caudatum,Western Wild Ginger,52858,2022,122.0,128.0,-6.0,-0.347
+Asarum caudatum,Western Wild Ginger,52858,2023,143.4,128.0,15.4,0.892
+Asarum caudatum,Western Wild Ginger,52858,2024,128.0,128.0,0.0,0.0
+Asarum caudatum,Western Wild Ginger,52858,2025,133.6,128.0,5.6,0.324
+Camassia leichtlinii,great camas,62218,2018,117.8,118.7,-0.9,-0.213
+Camassia leichtlinii,great camas,62218,2019,124.0,118.7,5.3,1.257
+Camassia leichtlinii,great camas,62218,2020,119.6,118.7,0.9,0.213
+Camassia leichtlinii,great camas,62218,2021,121.0,118.7,2.3,0.545
+Camassia leichtlinii,great camas,62218,2022,115.8,118.7,-2.9,-0.688
+Camassia leichtlinii,great camas,62218,2023,128.0,118.7,9.3,2.205
+Camassia leichtlinii,great camas,62218,2024,116.0,118.7,-2.7,-0.64
+Camassia leichtlinii,great camas,62218,2025,117.8,118.7,-0.9,-0.213
+Camassia quamash,small camas,62220,2017,119.2,115.0,4.2,1.051
+Camassia quamash,small camas,62220,2018,115.0,115.0,0.0,0.0
+Camassia quamash,small camas,62220,2019,110.0,115.0,-5.0,-1.252
+Camassia quamash,small camas,62220,2020,115.0,115.0,0.0,0.0
+Camassia quamash,small camas,62220,2021,120.0,115.0,5.0,1.252
+Camassia quamash,small camas,62220,2022,114.0,115.0,-1.0,-0.25
+Camassia quamash,small camas,62220,2023,121.0,115.0,6.0,1.502
+Camassia quamash,small camas,62220,2024,110.0,115.0,-5.0,-1.252
+Camassia quamash,small camas,62220,2025,115.0,115.0,0.0,0.0
+Claytonia sibirica,Candy Flower,55767,2017,121.8,109.0,12.8,1.3
+Claytonia sibirica,Candy Flower,55767,2018,118.4,109.0,9.4,0.954
+Claytonia sibirica,Candy Flower,55767,2019,116.0,109.0,7.0,0.711
+Claytonia sibirica,Candy Flower,55767,2020,102.0,109.0,-7.0,-0.711
+Claytonia sibirica,Candy Flower,55767,2021,109.0,109.0,0.0,0.0
+Claytonia sibirica,Candy Flower,55767,2022,97.0,109.0,-12.0,-1.218
+Claytonia sibirica,Candy Flower,55767,2023,118.0,109.0,9.0,0.914
+Claytonia sibirica,Candy Flower,55767,2024,94.8,109.0,-14.2,-1.442
+Claytonia sibirica,Candy Flower,55767,2025,108.0,109.0,-1.0,-0.102
+Dicentra formosa,Pacific Bleeding Heart,51048,2017,114.6,115.0,-0.4,-0.134
+Dicentra formosa,Pacific Bleeding Heart,51048,2018,118.0,115.0,3.0,1.004
+Dicentra formosa,Pacific Bleeding Heart,51048,2019,115.0,115.0,0.0,0.0
+Dicentra formosa,Pacific Bleeding Heart,51048,2020,115.0,115.0,0.0,0.0
+Dicentra formosa,Pacific Bleeding Heart,51048,2021,112.0,115.0,-3.0,-1.004
+Dicentra formosa,Pacific Bleeding Heart,51048,2022,119.0,115.0,4.0,1.339
+Dicentra formosa,Pacific Bleeding Heart,51048,2023,115.0,115.0,0.0,0.0
+Dicentra formosa,Pacific Bleeding Heart,51048,2024,109.0,115.0,-6.0,-2.008
+Dicentra formosa,Pacific Bleeding Heart,51048,2025,113.2,115.0,-1.8,-0.602
+Erythronium oregonum,giant white fawn lily,59520,2017,106.4,103.2,3.2,0.739
+Erythronium oregonum,giant white fawn lily,59520,2018,103.2,103.2,0.0,0.0
+Erythronium oregonum,giant white fawn lily,59520,2019,106.0,103.2,2.8,0.646
+Erythronium oregonum,giant white fawn lily,59520,2020,102.0,103.2,-1.2,-0.277
+Erythronium oregonum,giant white fawn lily,59520,2021,108.0,103.2,4.8,1.108
+Erythronium oregonum,giant white fawn lily,59520,2022,103.0,103.2,-0.2,-0.046
+Erythronium oregonum,giant white fawn lily,59520,2023,111.0,103.2,7.8,1.8
+Erythronium oregonum,giant white fawn lily,59520,2024,96.2,103.2,-7.0,-1.616
+Erythronium oregonum,giant white fawn lily,59520,2025,101.0,103.2,-2.2,-0.508
+Fritillaria affinis,checker lily,50618,2017,120.0,114.0,6.0,1.408
+Fritillaria affinis,checker lily,50618,2018,115.0,114.0,1.0,0.235
+Fritillaria affinis,checker lily,50618,2019,117.4,114.0,3.4,0.798
+Fritillaria affinis,checker lily,50618,2020,114.0,114.0,0.0,0.0
+Fritillaria affinis,checker lily,50618,2021,107.6,114.0,-6.4,-1.501
+Fritillaria affinis,checker lily,50618,2022,114.0,114.0,0.0,0.0
+Fritillaria affinis,checker lily,50618,2023,118.0,114.0,4.0,0.938
+Fritillaria affinis,checker lily,50618,2024,107.8,114.0,-6.2,-1.455
+Fritillaria affinis,checker lily,50618,2025,112.8,114.0,-1.2,-0.282
+Lomatium utriculatum,Foothill desert-parsley,56827,2017,108.8,96.4,12.4,0.767
+Lomatium utriculatum,Foothill desert-parsley,56827,2018,107.4,96.4,11.0,0.681
+Lomatium utriculatum,Foothill desert-parsley,56827,2019,76.4,96.4,-20.0,-1.238
+Lomatium utriculatum,Foothill desert-parsley,56827,2021,99.8,96.4,3.4,0.21
+Lomatium utriculatum,Foothill desert-parsley,56827,2022,93.0,96.4,-3.4,-0.21
+Lomatium utriculatum,Foothill desert-parsley,56827,2023,89.8,96.4,-6.6,-0.408
+Lomatium utriculatum,Foothill desert-parsley,56827,2024,62.0,96.4,-34.4,-2.129
+Lomatium utriculatum,Foothill desert-parsley,56827,2025,102.0,96.4,5.6,0.347
+Lysichiton americanus,western skunk cabbage,48537,2017,86.8,83.6,3.2,0.835
+Lysichiton americanus,western skunk cabbage,48537,2018,82.0,83.6,-1.6,-0.418
+Lysichiton americanus,western skunk cabbage,48537,2019,87.0,83.6,3.4,0.888
+Lysichiton americanus,western skunk cabbage,48537,2020,80.0,83.6,-3.6,-0.94
+Lysichiton americanus,western skunk cabbage,48537,2021,82.0,83.6,-1.6,-0.418
+Lysichiton americanus,western skunk cabbage,48537,2022,83.6,83.6,0.0,0.0
+Lysichiton americanus,western skunk cabbage,48537,2023,89.0,83.6,5.4,1.41
+Lysichiton americanus,western skunk cabbage,48537,2024,77.0,83.6,-6.6,-1.723
+Lysichiton americanus,western skunk cabbage,48537,2025,85.8,83.6,2.2,0.574
+Oemleria cerasiformis,Osoberry,53419,2017,83.0,64.6,18.4,1.159
+Oemleria cerasiformis,Osoberry,53419,2018,65.6,64.6,1.0,0.063
+Oemleria cerasiformis,Osoberry,53419,2019,54.8,64.6,-9.8,-0.618
+Oemleria cerasiformis,Osoberry,53419,2020,34.8,64.6,-29.8,-1.878
+Oemleria cerasiformis,Osoberry,53419,2021,64.6,64.6,0.0,0.0
+Oemleria cerasiformis,Osoberry,53419,2022,54.6,64.6,-10.0,-0.63
+Oemleria cerasiformis,Osoberry,53419,2023,85.0,64.6,20.4,1.285
+Oemleria cerasiformis,Osoberry,53419,2024,56.0,64.6,-8.6,-0.542
+Oemleria cerasiformis,Osoberry,53419,2025,75.0,64.6,10.4,0.655
+Ribes sanguineum,Red-flowering Currant,53435,2017,104.0,88.0,16.0,2.008
+Ribes sanguineum,Red-flowering Currant,53435,2018,84.0,88.0,-4.0,-0.502
+Ribes sanguineum,Red-flowering Currant,53435,2019,90.6,88.0,2.6,0.326
+Ribes sanguineum,Red-flowering Currant,53435,2020,90.0,88.0,2.0,0.251
+Ribes sanguineum,Red-flowering Currant,53435,2021,88.0,88.0,0.0,0.0
+Ribes sanguineum,Red-flowering Currant,53435,2022,79.0,88.0,-9.0,-1.13
+Ribes sanguineum,Red-flowering Currant,53435,2023,95.0,88.0,7.0,0.879
+Ribes sanguineum,Red-flowering Currant,53435,2024,78.4,88.0,-9.6,-1.205
+Ribes sanguineum,Red-flowering Currant,53435,2025,86.0,88.0,-2.0,-0.251
+Sambucus racemosa,red-berried elder,57824,2017,116.0,113.0,3.0,0.529
+Sambucus racemosa,red-berried elder,57824,2018,115.8,113.0,2.8,0.494
+Sambucus racemosa,red-berried elder,57824,2019,113.0,113.0,0.0,0.0
+Sambucus racemosa,red-berried elder,57824,2020,112.2,113.0,-0.8,-0.141
+Sambucus racemosa,red-berried elder,57824,2021,114.6,113.0,1.6,0.282
+Sambucus racemosa,red-berried elder,57824,2022,112.0,113.0,-1.0,-0.176
+Sambucus racemosa,red-berried elder,57824,2023,119.0,113.0,6.0,1.058
+Sambucus racemosa,red-berried elder,57824,2024,101.0,113.0,-12.0,-2.116
+Sambucus racemosa,red-berried elder,57824,2025,105.0,113.0,-8.0,-1.411
+Tellima grandiflora,fringe cups,51655,2017,125.2,119.8,5.4,1.199
+Tellima grandiflora,fringe cups,51655,2018,118.0,119.8,-1.8,-0.4
+Tellima grandiflora,fringe cups,51655,2019,117.0,119.8,-2.8,-0.622
+Tellima grandiflora,fringe cups,51655,2020,119.8,119.8,0.0,0.0
+Tellima grandiflora,fringe cups,51655,2021,121.0,119.8,1.2,0.266
+Tellima grandiflora,fringe cups,51655,2022,120.0,119.8,0.2,0.044
+Tellima grandiflora,fringe cups,51655,2023,127.0,119.8,7.2,1.599
+Tellima grandiflora,fringe cups,51655,2024,113.0,119.8,-6.8,-1.51
+Tellima grandiflora,fringe cups,51655,2025,115.0,119.8,-4.8,-1.066
+Trillium ovatum,Pacific trillium,49463,2017,104.0,100.0,4.0,1.118
+Trillium ovatum,Pacific trillium,49463,2018,104.0,100.0,4.0,1.118
+Trillium ovatum,Pacific trillium,49463,2019,96.0,100.0,-4.0,-1.118
+Trillium ovatum,Pacific trillium,49463,2020,98.0,100.0,-2.0,-0.559
+Trillium ovatum,Pacific trillium,49463,2021,100.0,100.0,0.0,0.0
+Vaccinium ovatum,Evergreen Huckleberry,48349,2017,104.4,111.0,-6.6,-0.739
+Vaccinium ovatum,Evergreen Huckleberry,48349,2018,106.4,111.0,-4.6,-0.515
+Vaccinium ovatum,Evergreen Huckleberry,48349,2020,110.8,111.0,-0.2,-0.022
+Vaccinium ovatum,Evergreen Huckleberry,48349,2021,112.0,111.0,1.0,0.112
+Vaccinium ovatum,Evergreen Huckleberry,48349,2022,113.0,111.0,2.0,0.224
+Vaccinium ovatum,Evergreen Huckleberry,48349,2023,125.2,111.0,14.2,1.591
+Vaccinium ovatum,Evergreen Huckleberry,48349,2024,93.6,111.0,-17.4,-1.949
+Vaccinium ovatum,Evergreen Huckleberry,48349,2025,111.2,111.0,0.2,0.022
+Viola glabella,stream violet,71113,2017,103.2,106.0,-2.8,-0.538
+Viola glabella,stream violet,71113,2018,110.0,106.0,4.0,0.769
+Viola glabella,stream violet,71113,2019,107.0,106.0,1.0,0.192
+Viola glabella,stream violet,71113,2020,108.4,106.0,2.4,0.461
+Viola glabella,stream violet,71113,2021,99.4,106.0,-6.6,-1.268
+Viola glabella,stream violet,71113,2022,106.0,106.0,0.0,0.0
+Viola glabella,stream violet,71113,2023,112.0,106.0,6.0,1.153
+Viola glabella,stream violet,71113,2024,97.2,106.0,-8.8,-1.691
+Viola glabella,stream violet,71113,2025,99.4,106.0,-6.6,-1.268

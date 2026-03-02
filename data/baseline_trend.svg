@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="520" viewBox="0 0 980 520">
+  <rect x="0" y="0" width="980" height="520" fill="#fdfbf6"/>
+  <text x="490.0" y="24" text-anchor="middle" font-size="20" font-family="Georgia, serif" fill="#233529">
+    WA Baseline Trend (Species-Normalized Bloom Onset)
+  </text>
+  <line x1="80" y1="450.0" x2="950" y2="450.0" stroke="#e7e2d8" stroke-width="1" /><text x="70" y="454.0" text-anchor="end" font-size="12" fill="#6b746c">-9.5</text><line x1="80" y1="391.4" x2="950" y2="391.4" stroke="#e7e2d8" stroke-width="1" /><text x="70" y="395.4" text-anchor="end" font-size="12" fill="#6b746c">-6.7</text><line x1="80" y1="332.9" x2="950" y2="332.9" stroke="#e7e2d8" stroke-width="1" /><text x="70" y="336.9" text-anchor="end" font-size="12" fill="#6b746c">-4.0</text><line x1="80" y1="274.3" x2="950" y2="274.3" stroke="#e7e2d8" stroke-width="1" /><text x="70" y="278.3" text-anchor="end" font-size="12" fill="#6b746c">-1.2</text><line x1="80" y1="215.7" x2="950" y2="215.7" stroke="#e7e2d8" stroke-width="1" /><text x="70" y="219.7" text-anchor="end" font-size="12" fill="#6b746c">1.5</text><line x1="80" y1="157.1" x2="950" y2="157.1" stroke="#e7e2d8" stroke-width="1" /><text x="70" y="161.1" text-anchor="end" font-size="12" fill="#6b746c">4.3</text><line x1="80" y1="98.6" x2="950" y2="98.6" stroke="#e7e2d8" stroke-width="1" /><text x="70" y="102.6" text-anchor="end" font-size="12" fill="#6b746c">7.0</text><line x1="80" y1="40.0" x2="950" y2="40.0" stroke="#e7e2d8" stroke-width="1" /><text x="70" y="44.0" text-anchor="end" font-size="12" fill="#6b746c">9.8</text>
+  <line x1="80" y1="248.0" x2="950" y2="248.0" stroke="#98a59b" stroke-width="1.2" />
+  <polyline fill="none" stroke="#2c6a3f" stroke-width="3" points="80.0,145.7 188.8,192.7 297.5,256.0 406.2,275.7 515.0,276.4 623.8,308.7 732.5,103.9 841.2,386.1 950.0,270.3" />
+  <polyline fill="none" stroke="#c46a3a" stroke-width="2.5" stroke-dasharray="7,5" points="80.0,192.4 188.8,205.8 297.5,219.3 406.2,232.7 515.0,246.2 623.8,259.6 732.5,273.1 841.2,286.5 950.0,300.0" />
+  <line x1="80" y1="175.0" x2="950" y2="175.0" stroke="#6b3fb0" stroke-width="2.5" stroke-dasharray="4,4" />
+  <circle cx="80.0" cy="145.7" r="4" fill="#2c6a3f"/><circle cx="188.8" cy="192.7" r="4" fill="#2c6a3f"/><circle cx="297.5" cy="256.0" r="4" fill="#2c6a3f"/><circle cx="406.2" cy="275.7" r="4" fill="#2c6a3f"/><circle cx="515.0" cy="276.4" r="4" fill="#2c6a3f"/><circle cx="623.8" cy="308.7" r="4" fill="#2c6a3f"/><circle cx="732.5" cy="103.9" r="4" fill="#2c6a3f"/><circle cx="841.2" cy="386.1" r="4" fill="#2c6a3f"/><circle cx="950.0" cy="270.3" r="4" fill="#2c6a3f"/>
+  <line x1="80" y1="450" x2="950" y2="450" stroke="#7f8b83" />
+  <line x1="80" y1="40" x2="80" y2="450" stroke="#7f8b83" />
+  <text x="80.0" y="490" text-anchor="middle" font-size="12" fill="#6b746c">2017</text><text x="188.8" y="490" text-anchor="middle" font-size="12" fill="#6b746c">2018</text><text x="297.5" y="490" text-anchor="middle" font-size="12" fill="#6b746c">2019</text><text x="406.2" y="490" text-anchor="middle" font-size="12" fill="#6b746c">2020</text><text x="515.0" y="490" text-anchor="middle" font-size="12" fill="#6b746c">2021</text><text x="623.8" y="490" text-anchor="middle" font-size="12" fill="#6b746c">2022</text><text x="732.5" y="490" text-anchor="middle" font-size="12" fill="#6b746c">2023</text><text x="841.2" y="490" text-anchor="middle" font-size="12" fill="#6b746c">2024</text><text x="950.0" y="490" text-anchor="middle" font-size="12" fill="#6b746c">2025</text>
+  <text x="490.0" y="512" text-anchor="middle" font-size="13" fill="#3f4c43">Year</text>
+  <text x="22" y="260.0" transform="rotate(-90 22,260.0)" text-anchor="middle" font-size="13" fill="#3f4c43">
+    Mean anomaly (days, species-normalized)
+  </text>
+  <text x="964" y="58" text-anchor="end" font-size="12" fill="#c46a3a">
+    Trend slope: -0.63 days/year
+  </text>
+  <text x="964" y="76" text-anchor="end" font-size="12" fill="#6b3fb0">1950-2000 herbarium baseline: 3.42 days</text>
+</svg>

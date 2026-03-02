@@ -120,6 +120,21 @@
     .thumb { width: 64px; height: 64px; object-fit: cover; border-radius: 10px; border: 1px solid #ddd; display:block; }
     .species-link { color: #245f39; text-decoration: underline; font-weight: 700; }
     .species-link:hover { color: #184b2b; }
+    details.panel {
+      padding: 0;
+      overflow: hidden;
+    }
+    details > summary {
+      list-style: none;
+      cursor: pointer;
+      padding: 0.95rem 1rem;
+      font-weight: 700;
+      color: var(--accent);
+      border-bottom: 1px solid #ece8dd;
+      background: #fcfaf4;
+    }
+    details > summary::-webkit-details-marker { display: none; }
+    .panel-inner { padding: 1rem; }
   </style>
 </head>
 <body>
@@ -127,25 +142,45 @@
     <section class="hero">
       <h1>Washington Spring Bloom Watch</h1>
       <p class="sub" id="subtitle">Loading current bloom status...</p>
+      <p class="sub" id="subtitle-longterm">Loading long-term comparison...</p>
       <p class="updated" id="updated-at">Last updated: --</p>
       <div id="status-chip" class="status-chip">Loading</div>
     </section>
 
-    <section class="grid">
-      <article class="panel">
-        <h2>By Geography</h2>
-        <div id="zone-table"></div>
-      </article>
-      <article class="panel">
-        <h2>Method</h2>
-        <div id="method"></div>
-      </article>
+    <section class="grid" style="grid-template-columns:1fr;">
+      <details class="panel">
+        <summary>Regional Breakdown (Advanced)</summary>
+        <div class="panel-inner">
+          <div id="zone-table"></div>
+        </div>
+      </details>
+
+      <details class="panel">
+        <summary>Method And Assumptions (Advanced)</summary>
+        <div class="panel-inner">
+          <div id="method"></div>
+        </div>
+      </details>
+
+      <details class="panel">
+        <summary>Long-Term Context (Advanced)</summary>
+        <div class="panel-inner">
+          <p class="small">
+            Compare recent iNaturalist-based onset anomalies to the historical herbarium baseline (1950-2000).
+          </p>
+          <p class="small">
+            <a class="species-link" href="./long_term_context.html">Open full long-term context page</a>
+          </p>
+        </div>
+      </details>
     </section>
 
-    <section class="panel" style="margin-top:1rem;">
-      <h2>Indicator Species (~20)</h2>
-      <div id="species-table"></div>
-    </section>
+    <details class="panel" style="margin-top:1rem;" open>
+      <summary>Indicator Species (~20)</summary>
+      <div class="panel-inner">
+        <div id="species-table"></div>
+      </div>
+    </details>
   </main>
 
   <script src="./data/spring_status.js"></script>
@@ -157,19 +192,43 @@
       return "normal";
     }
 
-    function fmtDoy(doy) {
-      return Number.isFinite(doy) ? Math.round(doy) : "-";
+    function parseCsv(text) {
+      const lines = text.trim().split(/\r?\n/);
+      if (!lines.length) return [];
+      const headers = lines[0].split(",");
+      return lines.slice(1).map(line => {
+        const cells = [];
+        let cur = "";
+        let inQuotes = false;
+        for (let i = 0; i < line.length; i++) {
+          const ch = line[i];
+          if (ch === '"') {
+            inQuotes = !inQuotes;
+          } else if (ch === "," && !inQuotes) {
+            cells.push(cur);
+            cur = "";
+          } else {
+            cur += ch;
+          }
+        }
+        cells.push(cur);
+        const row = {};
+        headers.forEach((h, i) => row[h] = cells[i] ?? "");
+        return row;
+      });
     }
 
-    function render() {
+    async function render() {
       const data = window.SPRING_STATUS;
       if (!data) {
         document.getElementById("subtitle").textContent = "No data file found. Run scripts/analyze_spring.py first.";
+        document.getElementById("subtitle-longterm").textContent = "";
         return;
       }
       const overall = data.overall;
       const years = data.years;
       const generated = data.generated_at ? new Date(data.generated_at) : null;
+      const longTermBySpecies = {};
 
       const chip = document.getElementById("status-chip");
       chip.textContent = overall.status + " spring";
@@ -180,14 +239,56 @@
         ? "var(--late)"
         : "var(--normal)";
 
-      document.getElementById("subtitle").textContent =
-        `${data.analysis_date}: ${overall.interpretation} ` +
-        `Overall anomaly: ${overall.anomaly_days} days. ` +
+      document.getElementById("subtitle").innerHTML =
+        `${data.analysis_date}: <strong>${overall.interpretation}</strong> ` +
+        `Overall anomaly: <strong>${overall.anomaly_days} days</strong>. ` +
         `${overall.species_with_signal} of ${overall.species_count} indicator species have current-year bloom signal.`;
+      document.getElementById("subtitle-longterm").textContent =
+        "Long-term anomaly from herbarium records 1950-2000 baseline: loading...";
       document.getElementById("updated-at").textContent =
         generated && !Number.isNaN(generated.getTime())
           ? `Last updated: ${generated.toLocaleString()}`
           : "Last updated: unavailable";
+
+      try {
+        const [summaryResp, speciesResp] = await Promise.all([
+          fetch("./data/baseline_trend_summary.json", { cache: "no-store" }),
+          fetch("./data/herbarium_1950_2000_comparison.csv", { cache: "no-store" })
+        ]);
+        if (!summaryResp.ok) throw new Error("missing baseline summary");
+        const longTerm = await summaryResp.json();
+        const herbOffset = longTerm?.herbarium_1950_2000_comparison?.mean_comparable_anomaly_days;
+        if (speciesResp.ok) {
+          const csvText = await speciesResp.text();
+          const rows = parseCsv(csvText);
+          rows.forEach(r => {
+            const key = (r.species || "").trim();
+            const v = Number(r.comparable_anomaly_days);
+            if (key && Number.isFinite(v)) longTermBySpecies[key] = v;
+          });
+        }
+      } catch (err) {
+        // Keep fallback text below if herbarium files are unavailable.
+      }
+
+      let longTermNumer = 0;
+      let longTermDenom = 0;
+      for (const s of data.indicator_species) {
+        const offset = longTermBySpecies[s.species];
+        if (!s.has_current_data || !Number.isFinite(offset)) continue;
+        const weight = Math.max(1, Number(s.zones_used || 1)) * Math.max(1, Number(s.current_obs_total || 1));
+        const speciesLongTerm = Number(s.anomaly_days) - Number(offset);
+        longTermNumer += speciesLongTerm * weight;
+        longTermDenom += weight;
+      }
+      if (longTermDenom > 0) {
+        const overallLongTerm = longTermNumer / longTermDenom;
+        document.getElementById("subtitle-longterm").innerHTML =
+          `Long-term anomaly from herbarium records 1950-2000 baseline: <strong>${overallLongTerm.toFixed(2)} days</strong>.`;
+      } else {
+        document.getElementById("subtitle-longterm").textContent =
+          "Long-term anomaly from herbarium records 1950-2000 baseline: unavailable.";
+      }
 
       document.getElementById("zone-table").innerHTML =
         `<table>
@@ -216,7 +317,7 @@
       document.getElementById("species-table").innerHTML =
         `<table>
           <thead>
-            <tr><th>Photo</th><th>Species</th><th>Status</th><th>Anomaly</th><th>Obs (${years.current_year})</th></tr>
+            <tr><th>Photo</th><th>Species</th><th>Status</th><th>Anomaly</th><th>Long-term anomaly</th><th>Obs (${years.current_year})</th></tr>
           </thead>
           <tbody>
             ${data.indicator_species.map(s => `
@@ -224,7 +325,10 @@
                 <td>${s.photo_url ? `<img class="thumb" src="${s.photo_url}" alt="${s.common_name}" />` : `<span class="small">No photo</span>`}</td>
                 <td><a class="species-link" href="./species/${s.slug}.html"><strong>${s.common_name}</strong></a><br><span class="small"><em>${s.species}</em></span></td>
                 <td class="${cls(s.status)}">${s.status}</td>
-                <td>${s.anomaly_days} d</td>
+                <td>${s.status === "pending" ? `<span class="small">N/A</span>` : `${s.anomaly_days} d`}</td>
+                <td>${s.has_current_data && Number.isFinite(longTermBySpecies[s.species])
+                  ? `${(Number(s.anomaly_days) - Number(longTermBySpecies[s.species])).toFixed(1)} d`
+                  : `<span class="small">N/A</span>`}</td>
                 <td>${s.has_current_data && s.current_year_observations?.length
                   ? `<a href="https://www.inaturalist.org/observations?place_id=46&taxon_id=${s.taxon_id}&quality_grade=research&term_id=12&term_value_id=13&d1=${years.current_year}-01-01&d2=${years.current_year}-12-31" target="_blank" rel="noopener">${s.current_obs_total}</a>`
                   : `<span class="small">No ${years.current_year} bloom yet</span>`}</td>

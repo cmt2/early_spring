@@ -245,6 +245,10 @@ def render_species_pages(project_root: Path, output: Dict) -> None:
             obs_html = "<p>No current-year flowering observations in this dataset yet.</p>"
 
         year = output["years"]["current_year"]
+        burke_taxon = species["species"].replace(" ", "+")
+        fna_taxon = species["species"].replace(" ", "_")
+        burke_url = f"https://www.burkeherbarium.org/imagecollection/taxon.php?Taxon={burke_taxon}"
+        fna_url = f"https://floranorthamerica.org/{fna_taxon}"
         all_search_url = (
             f"https://www.inaturalist.org/observations?"
             f"place_id={WA_PLACE_ID}&taxon_id={species['taxon_id']}&quality_grade=research&"
@@ -276,6 +280,8 @@ def render_species_pages(project_root: Path, output: Dict) -> None:
       <p class="meta"><strong>Expected flowering onset:</strong> {escape(expected_date_text)} (baseline from prior years)</p>
       <p><a href="{escape(species['taxon_url'])}" target="_blank" rel="noopener">View taxon on iNaturalist</a></p>
       <p><a href="{escape(all_search_url)}" target="_blank" rel="noopener">View all {year} flowering observations in Washington</a></p>
+      <p><a href="{escape(burke_url)}" target="_blank" rel="noopener">Burke Herbarium Image Gallery (photos + WA map)</a></p>
+      <p><a href="{escape(fna_url)}" target="_blank" rel="noopener">Flora of North America species description</a></p>
       <h2>This Year's Flowering Observations</h2>
       {obs_html}
     </section>

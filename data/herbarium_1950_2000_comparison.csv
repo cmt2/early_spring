@@ -1,0 +1,21 @@
+species,common_name,taxon_id,herbarium_flowering_obs_1950_2000,herbarium_onset_doy_20pct,inat_2017_2025_median_onset_doy,comparable_anomaly_days
+Acer macrophyllum,bigleaf maple,48227,56,103.0,101.6,1.4
+Achlys triphylla,vanilla leaf,75263,40,125.0,132.0,-7.0
+Alnus rubra,Red Alder,56034,13,73.4,65.2,8.2
+Amelanchier alnifolia,Saskatoon,75415,151,108.0,114.0,-6.0
+Asarum caudatum,Western Wild Ginger,52858,49,128.8,128.0,0.8
+Camassia leichtlinii,great camas,62218,21,122.0,118.7,3.3
+Camassia quamash,small camas,62220,117,115.2,115.0,0.2
+Claytonia sibirica,Candy Flower,55767,115,121.0,109.0,12.0
+Dicentra formosa,Pacific Bleeding Heart,51048,76,111.0,115.0,-4.0
+Erythronium oregonum,giant white fawn lily,59520,40,103.8,103.2,0.6
+Fritillaria affinis,checker lily,50618,67,115.0,114.0,1.0
+Lomatium utriculatum,Foothill desert-parsley,56827,45,110.8,96.4,14.4
+Lysichiton americanus,western skunk cabbage,48537,21,84.0,83.6,0.4
+Oemleria cerasiformis,Osoberry,53419,44,80.0,64.6,15.4
+Ribes sanguineum,Red-flowering Currant,53435,135,95.0,88.0,7.0
+Sambucus racemosa,red-berried elder,57824,111,110.0,113.0,-3.0
+Tellima grandiflora,fringe cups,51655,85,133.8,119.8,14.0
+Trillium ovatum,Pacific trillium,49463,130,101.0,100.0,1.0
+Vaccinium ovatum,Evergreen Huckleberry,48349,16,100.0,111.0,-11.0
+Viola glabella,stream violet,71113,185,125.8,106.0,19.8
