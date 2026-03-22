@@ -4,6 +4,8 @@
 from __future__ import annotations
 
 import json
+import http.client
+import socket
 import math
 import re
 import statistics
@@ -95,7 +97,7 @@ def fetch_json(endpoint: str, params: Dict[str, object], pause_s: float = 0.12) 
                 time.sleep(delay)
                 continue
             raise
-        except URLError:
+        except (URLError, http.client.RemoteDisconnected, TimeoutError, socket.timeout, ConnectionResetError):
             if attempt < 5:
                 delay = 1.5 * attempt
                 time.sleep(delay)
