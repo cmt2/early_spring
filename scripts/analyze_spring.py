@@ -39,7 +39,7 @@ DEM_MAX_NEW_LOOKUPS_PER_RUN = 1500
 CANDIDATE_SPECIES = [
     "Oemleria cerasiformis",
     "Ribes sanguineum",
-    "Mahonia aquifolium",
+    "Berberis aquifolium",
     "Trillium ovatum",
     "Camassia quamash",
     "Camassia leichtlinii",
@@ -541,25 +541,41 @@ def summarize_species(
         min_year_obs=3,
         min_baseline_years=4,
     )
-    granularity = "zone"
-    if not zone_results:
-        zone_results = eval_groups(
-            by_side_year,
-            current_obs_by_side,
-            min_year_obs=2,
-            min_baseline_years=4,
-        )
-        granularity = "side"
-    if not zone_results:
-        zone_results = eval_groups(
-            {"statewide": by_state_year},
-            {"statewide": current_obs_state},
-            min_year_obs=2,
-            min_baseline_years=4,
-        )
-        granularity = "state"
+    side_results = eval_groups(
+        by_side_year,
+        current_obs_by_side,
+        min_year_obs=2,
+        min_baseline_years=4,
+    )
+    state_results = eval_groups(
+        {"statewide": by_state_year},
+        {"statewide": current_obs_state},
+        min_year_obs=2,
+        min_baseline_years=4,
+    )
 
-    if not zone_results:
+    def any_current(results: List[Dict]) -> bool:
+        return any(row.get("has_current") for row in results)
+
+    if zone_results and any_current(zone_results):
+        zone_results = zone_results
+        granularity = "zone"
+    elif side_results and any_current(side_results):
+        zone_results = side_results
+        granularity = "side"
+    elif state_results and any_current(state_results):
+        zone_results = state_results
+        granularity = "state"
+    elif zone_results:
+        zone_results = zone_results
+        granularity = "zone"
+    elif side_results:
+        zone_results = side_results
+        granularity = "side"
+    elif state_results:
+        zone_results = state_results
+        granularity = "state"
+    else:
         return None
 
     weighted_anomaly_numer = 0.0
@@ -725,7 +741,7 @@ def main() -> None:
         else:
             print(f"  - skipped: insufficient usable zone/year coverage ({len(observations)} observations)", flush=True)
 
-    indicators = pick_indicator_species(species_summaries, limit=20)
+    indicators = pick_indicator_species(species_summaries, limit=len(CANDIDATE_SPECIES))
     zones = build_zone_summary(indicators)
     overall = overall_status(indicators)
 
