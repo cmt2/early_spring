@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-25T13:54:46Z",
-  "analysis_date": "2026-03-25",
+  "generated_at": "2026-03-26T13:58:07Z",
+  "analysis_date": "2026-03-26",
   "wa_place_id": 46,
   "years": {
     "baseline_start": 2017,
@@ -24,7 +24,7 @@
   },
   "overall": {
     "status": "early",
-    "anomaly_days": -23.73,
+    "anomaly_days": -22.94,
     "species_count": 24,
     "species_with_signal": 12,
     "interpretation": "Flowering is trending earlier than the 2017-2025 baseline."
@@ -38,43 +38,43 @@
     },
     {
       "zone": "east-high",
-      "anomaly_days": -67.3,
+      "anomaly_days": -66.3,
       "status": "early",
       "species_count": 2
     },
     {
       "zone": "east-low",
-      "anomaly_days": -16.21,
+      "anomaly_days": -15.51,
       "status": "early",
       "species_count": 6
     },
     {
       "zone": "east-mid",
-      "anomaly_days": -48.2,
+      "anomaly_days": -47.2,
       "status": "early",
       "species_count": 13
     },
     {
       "zone": "west",
-      "anomaly_days": -16.0,
+      "anomaly_days": -15.0,
       "status": "early",
       "species_count": 1
     },
     {
       "zone": "west-high",
-      "anomaly_days": -87.25,
+      "anomaly_days": -86.25,
       "status": "early",
       "species_count": 3
     },
     {
       "zone": "west-low",
-      "anomaly_days": -18.15,
+      "anomaly_days": -17.2,
       "status": "early",
       "species_count": 22
     },
     {
       "zone": "west-mid",
-      "anomaly_days": -39.1,
+      "anomaly_days": -38.1,
       "status": "early",
       "species_count": 6
     }
@@ -96,7 +96,7 @@
           "zone": "west-high",
           "baseline_doy": 167.0,
           "current_doy": null,
-          "anomaly_days": -83.0,
+          "anomaly_days": -82.0,
           "status": "pending",
           "baseline_years": 5,
           "current_obs": 0,
@@ -106,7 +106,7 @@
           "zone": "east-mid",
           "baseline_doy": 131.4,
           "current_doy": null,
-          "anomaly_days": -47.4,
+          "anomaly_days": -46.4,
           "status": "pending",
           "baseline_years": 9,
           "current_obs": 0,
@@ -116,7 +116,7 @@
           "zone": "west-mid",
           "baseline_doy": 128.1,
           "current_doy": null,
-          "anomaly_days": -44.1,
+          "anomaly_days": -43.1,
           "status": "pending",
           "baseline_years": 4,
           "current_obs": 0,
@@ -126,7 +126,7 @@
           "zone": "west-low",
           "baseline_doy": 112.0,
           "current_doy": null,
-          "anomaly_days": -28.0,
+          "anomaly_days": -27.0,
           "status": "pending",
           "baseline_years": 9,
           "current_obs": 0,
@@ -183,7 +183,7 @@
           "zone": "west-high",
           "baseline_doy": 167.7,
           "current_doy": null,
-          "anomaly_days": -83.7,
+          "anomaly_days": -82.7,
           "status": "pending",
           "baseline_years": 4,
           "current_obs": 0,
@@ -193,7 +193,7 @@
           "zone": "east-high",
           "baseline_doy": 151.6,
           "current_doy": null,
-          "anomaly_days": -67.6,
+          "anomaly_days": -66.6,
           "status": "pending",
           "baseline_years": 4,
           "current_obs": 0,
@@ -203,7 +203,7 @@
           "zone": "east-mid",
           "baseline_doy": 129.0,
           "current_doy": null,
-          "anomaly_days": -45.0,
+          "anomaly_days": -44.0,
           "status": "pending",
           "baseline_years": 4,
           "current_obs": 0,
@@ -213,7 +213,7 @@
           "zone": "west-mid",
           "baseline_doy": 126.3,
           "current_doy": null,
-          "anomaly_days": -42.3,
+          "anomaly_days": -41.3,
           "status": "pending",
           "baseline_years": 4,
           "current_obs": 0,
@@ -223,7 +223,7 @@
           "zone": "west-low",
           "baseline_doy": 95.0,
           "current_doy": null,
-          "anomaly_days": -11.0,
+          "anomaly_days": -10.0,
           "status": "pending",
           "baseline_years": 5,
           "current_obs": 0,
@@ -251,7 +251,7 @@
           "zone": "west-high",
           "baseline_doy": 180.1,
           "current_doy": null,
-          "anomaly_days": -96.1,
+          "anomaly_days": -95.1,
           "status": "pending",
           "baseline_years": 4,
           "current_obs": 0,
@@ -261,7 +261,7 @@
           "zone": "east-mid",
           "baseline_doy": 169.4,
           "current_doy": null,
-          "anomaly_days": -85.4,
+          "anomaly_days": -84.4,
           "status": "pending",
           "baseline_years": 7,
           "current_obs": 0,
@@ -271,7 +271,7 @@
           "zone": "west-mid",
           "baseline_doy": 144.2,
           "current_doy": null,
-          "anomaly_days": -60.2,
+          "anomaly_days": -59.2,
           "status": "pending",
           "baseline_years": 7,
           "current_obs": 0,
@@ -281,7 +281,7 @@
           "zone": "west-low",
           "baseline_doy": 113.0,
           "current_doy": null,
-          "anomaly_days": -29.0,
+          "anomaly_days": -28.0,
           "status": "pending",
           "baseline_years": 9,
           "current_obs": 0,
@@ -301,7 +301,7 @@
       "taxon_url": "https://www.inaturalist.org/taxa/53435",
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/622375522/medium.jpg",
       "status": "early",
-      "anomaly_days": -35.6,
+      "anomaly_days": -35.0,
       "zones_used": 3,
       "granularity": "zone",
       "zones": [
@@ -309,7 +309,7 @@
           "zone": "east-mid",
           "baseline_doy": 134.7,
           "current_doy": null,
-          "anomaly_days": -50.7,
+          "anomaly_days": -49.7,
           "status": "pending",
           "baseline_years": 6,
           "current_obs": 0,
@@ -318,27 +318,51 @@
         {
           "zone": "west-low",
           "baseline_doy": 88.0,
-          "current_doy": 52.4,
-          "anomaly_days": -35.6,
+          "current_doy": 53.0,
+          "anomaly_days": -35.0,
           "status": "early",
           "baseline_years": 9,
-          "current_obs": 73,
+          "current_obs": 80,
           "has_current": true
         },
         {
           "zone": "west-mid",
           "baseline_doy": 117.8,
           "current_doy": null,
-          "anomaly_days": -33.8,
+          "anomaly_days": -32.8,
           "status": "pending",
           "baseline_years": 5,
           "current_obs": 0,
           "has_current": false
         }
       ],
-      "current_obs_total": 73,
+      "current_obs_total": 80,
       "has_current_data": true,
       "current_year_observations": [
+        {
+          "observed_on": "2026-03-25",
+          "uri": "https://www.inaturalist.org/observations/345112827",
+          "place_guess": "18th St SW, Puyallup, WA, US",
+          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/628890556/square.jpg"
+        },
+        {
+          "observed_on": "2026-03-25",
+          "uri": "https://www.inaturalist.org/observations/345131549",
+          "place_guess": "87th Avenue Ct SW, Lakewood, WA, US",
+          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/628925287/square.jpg"
+        },
+        {
+          "observed_on": "2026-03-25",
+          "uri": "https://www.inaturalist.org/observations/345212446",
+          "place_guess": "East Hill-Meridian, WA, USA",
+          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/629066440/square.jpg"
+        },
+        {
+          "observed_on": "2026-03-25",
+          "uri": "https://www.inaturalist.org/observations/345214828",
+          "place_guess": "University Place, WA, USA",
+          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/629095376/square.jpg"
+        },
         {
           "observed_on": "2026-03-24",
           "uri": "https://www.inaturalist.org/observations/344933263",
@@ -350,6 +374,12 @@
           "uri": "https://www.inaturalist.org/observations/345014294",
           "place_guess": "Lake City, Lakewood, WA, US",
           "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/628697163/square.jpg"
+        },
+        {
+          "observed_on": "2026-03-24",
+          "uri": "https://www.inaturalist.org/observations/345115720",
+          "place_guess": "E Stevens Way NE, Seattle, WA, US",
+          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/628896095/square.jpg"
         },
         {
           "observed_on": "2026-03-24",
@@ -377,6 +407,18 @@
         },
         {
           "observed_on": "2026-03-23",
+          "uri": "https://www.inaturalist.org/observations/345099187",
+          "place_guess": "Harris Ave, Bellingham, WA, US",
+          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/628865200/square.jpg"
+        },
+        {
+          "observed_on": "2026-03-23",
+          "uri": "https://www.inaturalist.org/observations/345099216",
+          "place_guess": "Harris Ave, Bellingham, WA, US",
+          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/628865238/square.jpg"
+        },
+        {
+          "observed_on": "2026-03-23",
           "uri": "https://www.inaturalist.org/observations/344721232",
           "place_guess": "Ridgefield, WA 98642, USA",
           "photo_url": "https://static.inaturalist.org/photos/628135561/square.jpg"
@@ -386,51 +428,9 @@
           "uri": "https://www.inaturalist.org/observations/344932427",
           "place_guess": "Riverview, Seattle, WA 98106, USA",
           "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/628536847/square.jpg"
-        },
-        {
-          "observed_on": "2026-03-23",
-          "uri": "https://www.inaturalist.org/observations/344743454",
-          "place_guess": "Samish Bay, WA, US",
-          "photo_url": "https://static.inaturalist.org/photos/628178068/square.jpg"
-        },
-        {
-          "observed_on": "2026-03-23",
-          "uri": "https://www.inaturalist.org/observations/344786124",
-          "place_guess": "King County, US-WA, US",
-          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/628254121/square.jpg"
-        },
-        {
-          "observed_on": "2026-03-22",
-          "uri": "https://www.inaturalist.org/observations/344469959",
-          "place_guess": "North Beach/Blue Ridge, Seattle, WA, USA",
-          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/627646995/square.jpg"
-        },
-        {
-          "observed_on": "2026-03-22",
-          "uri": "https://www.inaturalist.org/observations/344481985",
-          "place_guess": "Cleveland St, Port Hadlock, WA, US",
-          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/627669788/square.jpg"
-        },
-        {
-          "observed_on": "2026-03-22",
-          "uri": "https://www.inaturalist.org/observations/344536650",
-          "place_guess": "R Ave, Anacortes, WA, US",
-          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/627777081/square.jpg"
-        },
-        {
-          "observed_on": "2026-03-22",
-          "uri": "https://www.inaturalist.org/observations/344617229",
-          "place_guess": "Skagit County, US-WA, US",
-          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/627935936/square.jpg"
-        },
-        {
-          "observed_on": "2026-03-22",
-          "uri": "https://www.inaturalist.org/observations/345010732",
-          "place_guess": "E Lynn St, Seattle, WA, US",
-          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/628690845/square.jpg"
         }
       ],
-      "observation_count": 887
+      "observation_count": 894
     },
     {
       "species": "Lysichiton americanus",
@@ -440,7 +440,7 @@
       "taxon_url": "https://www.inaturalist.org/taxa/48537",
       "photo_url": "https://static.inaturalist.org/photos/107900/medium.jpg",
       "status": "early",
-      "anomaly_days": -22.0,
+      "anomaly_days": -20.2,
       "zones_used": 3,
       "granularity": "zone",
       "zones": [
@@ -448,7 +448,7 @@
           "zone": "east-mid",
           "baseline_doy": 108.8,
           "current_doy": null,
-          "anomaly_days": -24.8,
+          "anomaly_days": -23.8,
           "status": "pending",
           "baseline_years": 5,
           "current_obs": 0,
@@ -458,7 +458,7 @@
           "zone": "west-mid",
           "baseline_doy": 106.9,
           "current_doy": null,
-          "anomaly_days": -22.9,
+          "anomaly_days": -21.9,
           "status": "pending",
           "baseline_years": 8,
           "current_obs": 0,
@@ -467,17 +467,29 @@
         {
           "zone": "west-low",
           "baseline_doy": 81.8,
-          "current_doy": 59.8,
-          "anomaly_days": -22.0,
+          "current_doy": 61.6,
+          "anomaly_days": -20.2,
           "status": "early",
           "baseline_years": 9,
-          "current_obs": 30,
+          "current_obs": 35,
           "has_current": true
         }
       ],
-      "current_obs_total": 31,
+      "current_obs_total": 36,
       "has_current_data": true,
       "current_year_observations": [
+        {
+          "observed_on": "2026-03-25",
+          "uri": "https://www.inaturalist.org/observations/345116491",
+          "place_guess": "Fairhaven Park, Bellingham, WA, US",
+          "photo_url": "https://static.inaturalist.org/photos/628897606/square.jpg"
+        },
+        {
+          "observed_on": "2026-03-25",
+          "uri": "https://www.inaturalist.org/observations/345212448",
+          "place_guess": "East Hill-Meridian, WA, USA",
+          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/629066561/square.jpg"
+        },
         {
           "observed_on": "2026-03-24",
           "uri": "https://www.inaturalist.org/observations/344944512",
@@ -486,9 +498,27 @@
         },
         {
           "observed_on": "2026-03-24",
+          "uri": "https://www.inaturalist.org/observations/345220398",
+          "place_guess": "NW Myhre Rd, Silverdale, WA, US",
+          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/629106576/square.jpg"
+        },
+        {
+          "observed_on": "2026-03-24",
+          "uri": "https://www.inaturalist.org/observations/345220388",
+          "place_guess": "NW Myhre Rd, Silverdale, WA, US",
+          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/629106534/square.jpg"
+        },
+        {
+          "observed_on": "2026-03-24",
           "uri": "https://www.inaturalist.org/observations/345027918",
           "place_guess": "North Beach Park, Seattle, WA, US",
           "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/628725205/square.jpg"
+        },
+        {
+          "observed_on": "2026-03-23",
+          "uri": "https://www.inaturalist.org/observations/345006372",
+          "place_guess": "South Whidbey State Park, Freeland, WA, US",
+          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/628681100/square.jpg"
         },
         {
           "observed_on": "2026-03-22",
@@ -537,39 +567,9 @@
           "uri": "https://www.inaturalist.org/observations/343879701",
           "place_guess": "Olympic National Park, Forks, WA, US",
           "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/626492168/square.jpg"
-        },
-        {
-          "observed_on": "2026-03-18",
-          "uri": "https://www.inaturalist.org/observations/343820824",
-          "place_guess": "Taylor Ave, Bellingham, WA, US",
-          "photo_url": "https://static.inaturalist.org/photos/626378400/square.jpg"
-        },
-        {
-          "observed_on": "2026-03-18",
-          "uri": "https://www.inaturalist.org/observations/343828774",
-          "place_guess": "Happy Valley, Bellingham, WA, USA",
-          "photo_url": "https://static.inaturalist.org/photos/626385415/square.jpg"
-        },
-        {
-          "observed_on": "2026-03-16",
-          "uri": "https://www.inaturalist.org/observations/343323781",
-          "place_guess": "NE 98th St, Seattle, WA, US",
-          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/625372103/square.jpg"
-        },
-        {
-          "observed_on": "2026-03-16",
-          "uri": "https://www.inaturalist.org/observations/343405957",
-          "place_guess": "North Beach/Blue Ridge, Seattle, WA, USA",
-          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/625541683/square.jpg"
-        },
-        {
-          "observed_on": "2026-03-15",
-          "uri": "https://www.inaturalist.org/observations/343195049",
-          "place_guess": "Lake Forest Park, WA 98155, USA",
-          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/625107323/square.jpg"
         }
       ],
-      "observation_count": 1058
+      "observation_count": 1063
     },
     {
       "species": "Berberis aquifolium",
@@ -597,7 +597,7 @@
           "zone": "east-mid",
           "baseline_doy": 118.0,
           "current_doy": null,
-          "anomaly_days": -34.0,
+          "anomaly_days": -33.0,
           "status": "pending",
           "baseline_years": 7,
           "current_obs": 0,
@@ -607,7 +607,7 @@
           "zone": "east-low",
           "baseline_doy": 107.7,
           "current_doy": null,
-          "anomaly_days": -23.7,
+          "anomaly_days": -22.7,
           "status": "pending",
           "baseline_years": 4,
           "current_obs": 0,
@@ -699,16 +699,6 @@
       "granularity": "zone",
       "zones": [
         {
-          "zone": "east-mid",
-          "baseline_doy": 125.2,
-          "current_doy": null,
-          "anomaly_days": -41.2,
-          "status": "pending",
-          "baseline_years": 9,
-          "current_obs": 0,
-          "has_current": false
-        },
-        {
           "zone": "west-low",
           "baseline_doy": 115.0,
           "current_doy": 74.0,
@@ -719,10 +709,20 @@
           "has_current": true
         },
         {
+          "zone": "east-mid",
+          "baseline_doy": 125.2,
+          "current_doy": null,
+          "anomaly_days": -40.2,
+          "status": "pending",
+          "baseline_years": 9,
+          "current_obs": 0,
+          "has_current": false
+        },
+        {
           "zone": "east-low",
           "baseline_doy": 96.2,
           "current_doy": null,
-          "anomaly_days": -12.2,
+          "anomaly_days": -11.2,
           "status": "pending",
           "baseline_years": 9,
           "current_obs": 0,
@@ -739,7 +739,7 @@
           "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/625088389/square.jpg"
         }
       ],
-      "observation_count": 1210
+      "observation_count": 1211
     },
     {
       "species": "Amelanchier alnifolia",
@@ -757,7 +757,7 @@
           "zone": "east-mid",
           "baseline_doy": 120.0,
           "current_doy": null,
-          "anomaly_days": -36.0,
+          "anomaly_days": -35.0,
           "status": "pending",
           "baseline_years": 9,
           "current_obs": 0,
@@ -767,7 +767,7 @@
           "zone": "west-low",
           "baseline_doy": 116.8,
           "current_doy": null,
-          "anomaly_days": -32.8,
+          "anomaly_days": -31.8,
           "status": "pending",
           "baseline_years": 9,
           "current_obs": 0,
@@ -777,7 +777,7 @@
           "zone": "east-low",
           "baseline_doy": 102.8,
           "current_doy": null,
-          "anomaly_days": -18.8,
+          "anomaly_days": -17.8,
           "status": "pending",
           "baseline_years": 8,
           "current_obs": 0,
@@ -805,7 +805,7 @@
           "zone": "east-high",
           "baseline_doy": 151.1,
           "current_doy": null,
-          "anomaly_days": -67.1,
+          "anomaly_days": -66.1,
           "status": "pending",
           "baseline_years": 6,
           "current_obs": 0,
@@ -815,7 +815,7 @@
           "zone": "east-mid",
           "baseline_doy": 115.6,
           "current_doy": null,
-          "anomaly_days": -31.6,
+          "anomaly_days": -30.6,
           "status": "pending",
           "baseline_years": 9,
           "current_obs": 0,
@@ -825,7 +825,7 @@
           "zone": "east-low",
           "baseline_doy": 105.6,
           "current_doy": null,
-          "anomaly_days": -21.6,
+          "anomaly_days": -20.6,
           "status": "pending",
           "baseline_years": 7,
           "current_obs": 0,
@@ -853,7 +853,7 @@
           "zone": "east-mid",
           "baseline_doy": 126.8,
           "current_doy": null,
-          "anomaly_days": -42.8,
+          "anomaly_days": -41.8,
           "status": "pending",
           "baseline_years": 6,
           "current_obs": 0,
@@ -863,7 +863,7 @@
           "zone": "west-mid",
           "baseline_doy": 117.0,
           "current_doy": null,
-          "anomaly_days": -33.0,
+          "anomaly_days": -32.0,
           "status": "pending",
           "baseline_years": 4,
           "current_obs": 0,
@@ -873,7 +873,7 @@
           "zone": "west-low",
           "baseline_doy": 94.0,
           "current_doy": null,
-          "anomaly_days": -10.0,
+          "anomaly_days": -9.0,
           "status": "pending",
           "baseline_years": 9,
           "current_obs": 0,
@@ -911,7 +911,7 @@
           "zone": "east-low",
           "baseline_doy": 98.0,
           "current_doy": null,
-          "anomaly_days": -14.0,
+          "anomaly_days": -13.0,
           "status": "pending",
           "baseline_years": 6,
           "current_obs": 0,
@@ -958,7 +958,7 @@
           "zone": "east-mid",
           "baseline_doy": 149.4,
           "current_doy": null,
-          "anomaly_days": -65.4,
+          "anomaly_days": -64.4,
           "status": "pending",
           "baseline_years": 5,
           "current_obs": 0,
@@ -968,7 +968,7 @@
           "zone": "west-low",
           "baseline_doy": 128.0,
           "current_doy": null,
-          "anomaly_days": -44.0,
+          "anomaly_days": -43.0,
           "status": "pending",
           "baseline_years": 8,
           "current_obs": 0,
@@ -996,7 +996,7 @@
           "zone": "east-mid",
           "baseline_doy": 150.0,
           "current_doy": null,
-          "anomaly_days": -66.0,
+          "anomaly_days": -65.0,
           "status": "pending",
           "baseline_years": 7,
           "current_obs": 0,
@@ -1006,7 +1006,7 @@
           "zone": "west-low",
           "baseline_doy": 109.5,
           "current_doy": null,
-          "anomaly_days": -25.5,
+          "anomaly_days": -24.5,
           "status": "pending",
           "baseline_years": 6,
           "current_obs": 0,
@@ -1034,7 +1034,7 @@
           "zone": "east-mid",
           "baseline_doy": 158.4,
           "current_doy": null,
-          "anomaly_days": -74.4,
+          "anomaly_days": -73.4,
           "status": "pending",
           "baseline_years": 4,
           "current_obs": 0,
@@ -1044,7 +1044,7 @@
           "zone": "west-low",
           "baseline_doy": 119.0,
           "current_doy": null,
-          "anomaly_days": -35.0,
+          "anomaly_days": -34.0,
           "status": "pending",
           "baseline_years": 9,
           "current_obs": 0,
@@ -1064,29 +1064,53 @@
       "taxon_url": "https://www.inaturalist.org/taxa/53419",
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/5410/medium.jpg",
       "status": "early",
-      "anomaly_days": -9.6,
+      "anomaly_days": -8.0,
       "zones_used": 1,
       "granularity": "zone",
       "zones": [
         {
           "zone": "west-low",
           "baseline_doy": 64.6,
-          "current_doy": 55.0,
-          "anomaly_days": -9.6,
+          "current_doy": 56.6,
+          "anomaly_days": -8.0,
           "status": "early",
           "baseline_years": 9,
-          "current_obs": 246,
+          "current_obs": 250,
           "has_current": true
         }
       ],
-      "current_obs_total": 246,
+      "current_obs_total": 250,
       "has_current_data": true,
       "current_year_observations": [
+        {
+          "observed_on": "2026-03-25",
+          "uri": "https://www.inaturalist.org/observations/345111474",
+          "place_guess": "Fairhaven Park, Bellingham, WA, US",
+          "photo_url": "https://static.inaturalist.org/photos/628887908/square.jpg"
+        },
+        {
+          "observed_on": "2026-03-25",
+          "uri": "https://www.inaturalist.org/observations/345134273",
+          "place_guess": "Olympia, WA, USA",
+          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/628930463/square.jpg"
+        },
+        {
+          "observed_on": "2026-03-25",
+          "uri": "https://www.inaturalist.org/observations/345117797",
+          "place_guess": "Interurban Trail, Bellingham, WA, US",
+          "photo_url": "https://static.inaturalist.org/photos/628906529/square.jpg"
+        },
         {
           "observed_on": "2026-03-24",
           "uri": "https://www.inaturalist.org/observations/345033419",
           "place_guess": "Darrington, WA, US",
           "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/628736460/square.jpg"
+        },
+        {
+          "observed_on": "2026-03-24",
+          "uri": "https://www.inaturalist.org/observations/345045033",
+          "place_guess": "Olympia, WA 98512, USA",
+          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/628761209/square.jpg"
         },
         {
           "observed_on": "2026-03-24",
@@ -1147,33 +1171,9 @@
           "uri": "https://www.inaturalist.org/observations/344739616",
           "place_guess": "Sequim, WA 98382, USA",
           "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/628171897/square.jpg"
-        },
-        {
-          "observed_on": "2026-03-23",
-          "uri": "https://www.inaturalist.org/observations/344804292",
-          "place_guess": "Darrington, WA, US",
-          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/628288548/square.jpg"
-        },
-        {
-          "observed_on": "2026-03-23",
-          "uri": "https://www.inaturalist.org/observations/344745330",
-          "place_guess": "Lake Stevens, WA 98258, USA",
-          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/628179370/square.jpg"
-        },
-        {
-          "observed_on": "2026-03-23",
-          "uri": "https://www.inaturalist.org/observations/344753121",
-          "place_guess": "Machias, WA, USA",
-          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/628189610/square.jpg"
-        },
-        {
-          "observed_on": "2026-03-23",
-          "uri": "https://www.inaturalist.org/observations/344760090",
-          "place_guess": "Machias, WA, USA",
-          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/628203052/square.jpg"
         }
       ],
-      "observation_count": 1116
+      "observation_count": 1120
     },
     {
       "species": "Vaccinium ovatum",
@@ -1183,24 +1183,30 @@
       "taxon_url": "https://www.inaturalist.org/taxa/48349",
       "photo_url": "https://static.inaturalist.org/photos/121469550/medium.jpeg",
       "status": "early",
-      "anomaly_days": -68.4,
+      "anomaly_days": -66.6,
       "zones_used": 1,
       "granularity": "zone",
       "zones": [
         {
           "zone": "west-low",
-          "baseline_doy": 111.4,
-          "current_doy": 43.0,
-          "anomaly_days": -68.4,
+          "baseline_doy": 110.6,
+          "current_doy": 44.0,
+          "anomaly_days": -66.6,
           "status": "early",
           "baseline_years": 8,
-          "current_obs": 3,
+          "current_obs": 4,
           "has_current": true
         }
       ],
-      "current_obs_total": 3,
+      "current_obs_total": 4,
       "has_current_data": true,
       "current_year_observations": [
+        {
+          "observed_on": "2026-03-24",
+          "uri": "https://www.inaturalist.org/observations/345229133",
+          "place_guess": "US-101, Naselle, WA, US",
+          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/629125511/square.jpg"
+        },
         {
           "observed_on": "2026-03-19",
           "uri": "https://www.inaturalist.org/observations/343911041",
@@ -1220,7 +1226,7 @@
           "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/614918076/square.jpg"
         }
       ],
-      "observation_count": 169
+      "observation_count": 173
     },
     {
       "species": "Claytonia sibirica",
@@ -1320,7 +1326,7 @@
           "zone": "west-low",
           "baseline_doy": 118.7,
           "current_doy": null,
-          "anomaly_days": -34.7,
+          "anomaly_days": -33.7,
           "status": "pending",
           "baseline_years": 8,
           "current_obs": 0,
@@ -1348,7 +1354,7 @@
           "zone": "west-low",
           "baseline_doy": 103.2,
           "current_doy": null,
-          "anomaly_days": -19.2,
+          "anomaly_days": -18.2,
           "status": "pending",
           "baseline_years": 9,
           "current_obs": 0,
@@ -1376,7 +1382,7 @@
           "zone": "west-low",
           "baseline_doy": 114.7,
           "current_doy": null,
-          "anomaly_days": -30.7,
+          "anomaly_days": -29.7,
           "status": "pending",
           "baseline_years": 8,
           "current_obs": 0,
@@ -1404,7 +1410,7 @@
           "zone": "west-low",
           "baseline_doy": 113.0,
           "current_doy": null,
-          "anomaly_days": -29.0,
+          "anomaly_days": -28.0,
           "status": "pending",
           "baseline_years": 9,
           "current_obs": 0,
@@ -1424,7 +1430,7 @@
       "taxon_url": "https://www.inaturalist.org/taxa/56034",
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/50900970/medium.jpg",
       "status": "late",
-      "anomaly_days": 18.8,
+      "anomaly_days": 19.8,
       "zones_used": 1,
       "granularity": "zone",
       "zones": [
@@ -1432,7 +1438,7 @@
           "zone": "west-low",
           "baseline_doy": 65.2,
           "current_doy": null,
-          "anomaly_days": 18.8,
+          "anomaly_days": 19.8,
           "status": "late",
           "baseline_years": 5,
           "current_obs": 0,
@@ -1470,7 +1476,7 @@
           "zone": "west",
           "baseline_doy": 100.0,
           "current_doy": null,
-          "anomaly_days": -16.0,
+          "anomaly_days": -15.0,
           "status": "pending",
           "baseline_years": 7,
           "current_obs": 0,
