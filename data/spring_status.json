@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-03T14:59:10Z",
-  "analysis_date": "2026-06-03",
+  "generated_at": "2026-06-04T14:16:11Z",
+  "analysis_date": "2026-06-04",
   "wa_place_id": 46,
   "years": {
     "baseline_start": 2017,
@@ -24,7 +24,7 @@
   },
   "overall": {
     "status": "early",
-    "anomaly_days": -7.4,
+    "anomaly_days": -7.39,
     "species_count": 24,
     "species_with_signal": 24,
     "interpretation": "Flowering is trending earlier than the 2017-2025 baseline."
@@ -32,25 +32,25 @@
   "zone_summary": [
     {
       "zone": "east-high",
-      "anomaly_days": -27.3,
+      "anomaly_days": -26.9,
       "status": "early",
       "species_count": 2
     },
     {
       "zone": "east-low",
-      "anomaly_days": -5.47,
+      "anomaly_days": -5.43,
       "status": "normal",
       "species_count": 6
     },
     {
       "zone": "east-mid",
-      "anomaly_days": -6.99,
+      "anomaly_days": -6.95,
       "status": "normal",
       "species_count": 13
     },
     {
       "zone": "west-high",
-      "anomaly_days": -29.88,
+      "anomaly_days": -29.67,
       "status": "early",
       "species_count": 2
     },
@@ -62,7 +62,7 @@
     },
     {
       "zone": "west-mid",
-      "anomaly_days": -2.97,
+      "anomaly_days": -2.92,
       "status": "normal",
       "species_count": 6
     }
@@ -235,7 +235,7 @@
       "taxon_url": "https://www.inaturalist.org/taxa/49463",
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/214028513/medium.jpg",
       "status": "late",
-      "anomaly_days": 38.91,
+      "anomaly_days": 39.91,
       "zones_used": 5,
       "granularity": "zone",
       "zones": [
@@ -243,7 +243,7 @@
           "zone": "west-low",
           "baseline_doy": 95.0,
           "current_doy": null,
-          "anomaly_days": 59.0,
+          "anomaly_days": 60.0,
           "status": "late",
           "baseline_years": 5,
           "current_obs": 0,
@@ -253,7 +253,7 @@
           "zone": "west-mid",
           "baseline_doy": 126.3,
           "current_doy": null,
-          "anomaly_days": 27.7,
+          "anomaly_days": 28.7,
           "status": "late",
           "baseline_years": 4,
           "current_obs": 0,
@@ -263,7 +263,7 @@
           "zone": "east-mid",
           "baseline_doy": 129.0,
           "current_doy": null,
-          "anomaly_days": 25.0,
+          "anomaly_days": 26.0,
           "status": "late",
           "baseline_years": 4,
           "current_obs": 0,
@@ -273,7 +273,7 @@
           "zone": "west-high",
           "baseline_doy": 167.7,
           "current_doy": null,
-          "anomaly_days": -13.7,
+          "anomaly_days": -12.7,
           "status": "pending",
           "baseline_years": 4,
           "current_obs": 0,
@@ -283,7 +283,7 @@
           "zone": "east-high",
           "baseline_doy": 151.6,
           "current_doy": null,
-          "anomaly_days": 2.4,
+          "anomaly_days": 3.4,
           "status": "pending",
           "baseline_years": 4,
           "current_obs": 0,
@@ -616,7 +616,7 @@
           "has_current": true
         }
       ],
-      "current_obs_total": 76,
+      "current_obs_total": 77,
       "has_current_data": true,
       "current_year_observations": [
         {
@@ -624,6 +624,12 @@
           "uri": "https://www.inaturalist.org/observations/366656017",
           "place_guess": "Kittitas County, WA, USA",
           "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/669521158/square.jpg"
+        },
+        {
+          "observed_on": "2026-05-27",
+          "uri": "https://www.inaturalist.org/observations/366378580",
+          "place_guess": "Yakima County, WA, USA",
+          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/668993454/square.jpg"
         },
         {
           "observed_on": "2026-05-19",
@@ -702,15 +708,9 @@
           "uri": "https://www.inaturalist.org/observations/357664974",
           "place_guess": "Coupeville, WA 98239, USA",
           "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/652370140/square.jpg"
-        },
-        {
-          "observed_on": "2026-05-02",
-          "uri": "https://www.inaturalist.org/observations/357757233",
-          "place_guess": "S Parker Rd, Coupeville, WA, US",
-          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/652554143/square.jpg"
         }
       ],
-      "observation_count": 1284
+      "observation_count": 1285
     },
     {
       "species": "Balsamorhiza sagittata",
@@ -998,7 +998,7 @@
       "taxon_url": "https://www.inaturalist.org/taxa/71113",
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/291898703/medium.jpg",
       "status": "normal",
-      "anomaly_days": 1.84,
+      "anomaly_days": 1.89,
       "zones_used": 3,
       "granularity": "zone",
       "zones": [
@@ -1006,7 +1006,7 @@
           "zone": "east-mid",
           "baseline_doy": 126.8,
           "current_doy": null,
-          "anomaly_days": 27.2,
+          "anomaly_days": 28.2,
           "status": "late",
           "baseline_years": 6,
           "current_obs": 0,
@@ -1204,7 +1204,7 @@
       "taxon_url": "https://www.inaturalist.org/taxa/51048",
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/76022505/medium.jpg",
       "status": "late",
-      "anomaly_days": 27.88,
+      "anomaly_days": 28.88,
       "zones_used": 3,
       "granularity": "zone",
       "zones": [
@@ -1212,7 +1212,7 @@
           "zone": "west-low",
           "baseline_doy": 113.0,
           "current_doy": null,
-          "anomaly_days": 41.0,
+          "anomaly_days": 42.0,
           "status": "late",
           "baseline_years": 9,
           "current_obs": 0,
@@ -1222,7 +1222,7 @@
           "zone": "east-mid",
           "baseline_doy": 169.4,
           "current_doy": null,
-          "anomaly_days": -15.4,
+          "anomaly_days": -14.4,
           "status": "pending",
           "baseline_years": 7,
           "current_obs": 0,
@@ -1232,7 +1232,7 @@
           "zone": "west-mid",
           "baseline_doy": 143.0,
           "current_doy": null,
-          "anomaly_days": 11.0,
+          "anomaly_days": 12.0,
           "status": "late",
           "baseline_years": 7,
           "current_obs": 0,
@@ -1270,7 +1270,7 @@
           "zone": "east-mid",
           "baseline_doy": 158.4,
           "current_doy": null,
-          "anomaly_days": -4.4,
+          "anomaly_days": -3.4,
           "status": "pending",
           "baseline_years": 4,
           "current_obs": 0,
@@ -1381,7 +1381,7 @@
       "taxon_url": "https://www.inaturalist.org/taxa/48227",
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/660331866/medium.jpg",
       "status": "early",
-      "anomaly_days": -8.57,
+      "anomaly_days": -8.55,
       "zones_used": 2,
       "granularity": "zone",
       "zones": [
@@ -1389,7 +1389,7 @@
           "zone": "east-low",
           "baseline_doy": 100.4,
           "current_doy": null,
-          "anomaly_days": 53.6,
+          "anomaly_days": 54.6,
           "status": "late",
           "baseline_years": 6,
           "current_obs": 0,
