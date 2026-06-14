@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-06-13T14:02:41Z",
-  "analysis_date": "2026-06-13",
+  "generated_at": "2026-06-14T14:01:36Z",
+  "analysis_date": "2026-06-14",
   "wa_place_id": 46,
   "years": {
     "baseline_start": 2017,
@@ -24,7 +24,7 @@
   },
   "overall": {
     "status": "early",
-    "anomaly_days": -7.06,
+    "anomaly_days": -7.02,
     "species_count": 24,
     "species_with_signal": 24,
     "interpretation": "Flowering is trending earlier than the 2017-2025 baseline."
@@ -32,37 +32,37 @@
   "zone_summary": [
     {
       "zone": "east-high",
-      "anomaly_days": -23.3,
+      "anomaly_days": -22.9,
       "status": "early",
       "species_count": 2
     },
     {
       "zone": "east-low",
-      "anomaly_days": -5.02,
+      "anomaly_days": -4.98,
       "status": "normal",
       "species_count": 6
     },
     {
       "zone": "east-mid",
-      "anomaly_days": -6.64,
+      "anomaly_days": -6.6,
       "status": "normal",
       "species_count": 13
     },
     {
       "zone": "west-high",
-      "anomaly_days": -27.78,
+      "anomaly_days": -27.57,
       "status": "early",
       "species_count": 2
     },
     {
       "zone": "west-low",
-      "anomaly_days": -6.75,
+      "anomaly_days": -6.72,
       "status": "normal",
       "species_count": 23
     },
     {
       "zone": "west-mid",
-      "anomaly_days": -2.45,
+      "anomaly_days": -2.39,
       "status": "normal",
       "species_count": 6
     }
@@ -235,7 +235,7 @@
       "taxon_url": "https://www.inaturalist.org/taxa/49463",
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/214028513/medium.jpg",
       "status": "late",
-      "anomaly_days": 40.32,
+      "anomaly_days": 41.32,
       "zones_used": 5,
       "granularity": "zone",
       "zones": [
@@ -243,7 +243,7 @@
           "zone": "west-low",
           "baseline_doy": 95.0,
           "current_doy": null,
-          "anomaly_days": 69.0,
+          "anomaly_days": 70.0,
           "status": "late",
           "baseline_years": 5,
           "current_obs": 0,
@@ -253,7 +253,7 @@
           "zone": "west-mid",
           "baseline_doy": 126.3,
           "current_doy": null,
-          "anomaly_days": 37.7,
+          "anomaly_days": 38.7,
           "status": "late",
           "baseline_years": 4,
           "current_obs": 0,
@@ -263,7 +263,7 @@
           "zone": "east-mid",
           "baseline_doy": 129.0,
           "current_doy": null,
-          "anomaly_days": 35.0,
+          "anomaly_days": 36.0,
           "status": "late",
           "baseline_years": 4,
           "current_obs": 0,
@@ -273,7 +273,7 @@
           "zone": "east-high",
           "baseline_doy": 151.6,
           "current_doy": null,
-          "anomaly_days": 12.4,
+          "anomaly_days": 13.4,
           "status": "late",
           "baseline_years": 4,
           "current_obs": 0,
@@ -283,7 +283,7 @@
           "zone": "west-high",
           "baseline_doy": 167.7,
           "current_doy": null,
-          "anomaly_days": -3.7,
+          "anomaly_days": -2.7,
           "status": "pending",
           "baseline_years": 4,
           "current_obs": 0,
@@ -998,7 +998,7 @@
       "taxon_url": "https://www.inaturalist.org/taxa/71113",
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/291898703/medium.jpg",
       "status": "normal",
-      "anomaly_days": 2.38,
+      "anomaly_days": 2.44,
       "zones_used": 3,
       "granularity": "zone",
       "zones": [
@@ -1006,7 +1006,7 @@
           "zone": "east-mid",
           "baseline_doy": 126.8,
           "current_doy": null,
-          "anomaly_days": 37.2,
+          "anomaly_days": 38.2,
           "status": "late",
           "baseline_years": 6,
           "current_obs": 0,
@@ -1119,7 +1119,7 @@
       "taxon_url": "https://www.inaturalist.org/taxa/75415",
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/8047816/medium.jpg",
       "status": "normal",
-      "anomaly_days": -0.04,
+      "anomaly_days": 1.59,
       "zones_used": 3,
       "granularity": "zone",
       "zones": [
@@ -1146,17 +1146,23 @@
         {
           "zone": "west-low",
           "baseline_doy": 116.8,
-          "current_doy": 123.0,
-          "anomaly_days": 6.2,
-          "status": "normal",
+          "current_doy": 124.0,
+          "anomaly_days": 7.2,
+          "status": "late",
           "baseline_years": 9,
-          "current_obs": 4,
+          "current_obs": 5,
           "has_current": true
         }
       ],
-      "current_obs_total": 6,
+      "current_obs_total": 7,
       "has_current_data": true,
       "current_year_observations": [
+        {
+          "observed_on": "2026-05-31",
+          "uri": "https://www.inaturalist.org/observations/367266703",
+          "place_guess": "Mercer Island, WA, US",
+          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/670685717/square.jpg"
+        },
         {
           "observed_on": "2026-05-10",
           "uri": "https://www.inaturalist.org/observations/360514014",
@@ -1194,7 +1200,7 @@
           "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/630811205/square.jpg"
         }
       ],
-      "observation_count": 528
+      "observation_count": 529
     },
     {
       "species": "Dicentra formosa",
@@ -1204,7 +1210,7 @@
       "taxon_url": "https://www.inaturalist.org/taxa/51048",
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/76022505/medium.jpg",
       "status": "late",
-      "anomaly_days": 37.88,
+      "anomaly_days": 38.88,
       "zones_used": 3,
       "granularity": "zone",
       "zones": [
@@ -1212,7 +1218,7 @@
           "zone": "west-low",
           "baseline_doy": 113.0,
           "current_doy": null,
-          "anomaly_days": 51.0,
+          "anomaly_days": 52.0,
           "status": "late",
           "baseline_years": 9,
           "current_obs": 0,
@@ -1222,7 +1228,7 @@
           "zone": "west-mid",
           "baseline_doy": 143.0,
           "current_doy": null,
-          "anomaly_days": 21.0,
+          "anomaly_days": 22.0,
           "status": "late",
           "baseline_years": 7,
           "current_obs": 0,
@@ -1232,7 +1238,7 @@
           "zone": "east-mid",
           "baseline_doy": 169.4,
           "current_doy": null,
-          "anomaly_days": -5.4,
+          "anomaly_days": -4.4,
           "status": "pending",
           "baseline_years": 7,
           "current_obs": 0,
@@ -1260,7 +1266,7 @@
           "zone": "east-mid",
           "baseline_doy": 158.4,
           "current_doy": null,
-          "anomaly_days": 5.6,
+          "anomaly_days": 6.6,
           "status": "pending",
           "baseline_years": 4,
           "current_obs": 0,
@@ -1381,7 +1387,7 @@
       "taxon_url": "https://www.inaturalist.org/taxa/48227",
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/660331866/medium.jpg",
       "status": "early",
-      "anomaly_days": -8.35,
+      "anomaly_days": -7.79,
       "zones_used": 2,
       "granularity": "zone",
       "zones": [
@@ -1389,7 +1395,7 @@
           "zone": "east-low",
           "baseline_doy": 100.4,
           "current_doy": null,
-          "anomaly_days": 63.6,
+          "anomaly_days": 64.6,
           "status": "late",
           "baseline_years": 6,
           "current_obs": 0,
@@ -1398,15 +1404,15 @@
         {
           "zone": "west-low",
           "baseline_doy": 102.8,
-          "current_doy": 92.8,
-          "anomaly_days": -10.0,
+          "current_doy": 93.4,
+          "anomaly_days": -9.4,
           "status": "early",
           "baseline_years": 9,
-          "current_obs": 29,
+          "current_obs": 30,
           "has_current": true
         }
       ],
-      "current_obs_total": 30,
+      "current_obs_total": 31,
       "has_current_data": true,
       "current_year_observations": [
         {
@@ -1500,7 +1506,7 @@
           "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/639118218/square.jpg"
         }
       ],
-      "observation_count": 342
+      "observation_count": 343
     },
     {
       "species": "Asarum caudatum",
