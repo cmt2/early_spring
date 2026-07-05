@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-04T13:57:00Z",
-  "analysis_date": "2026-07-04",
+  "generated_at": "2026-07-05T14:01:01Z",
+  "analysis_date": "2026-07-05",
   "wa_place_id": 46,
   "years": {
     "baseline_start": 2017,
@@ -24,7 +24,7 @@
   },
   "overall": {
     "status": "normal",
-    "anomaly_days": -6.8,
+    "anomaly_days": -6.81,
     "species_count": 24,
     "species_with_signal": 24,
     "interpretation": "Flowering is close to the 2017-2025 baseline."
@@ -32,37 +32,37 @@
   "zone_summary": [
     {
       "zone": "east-high",
-      "anomaly_days": -16.18,
+      "anomaly_days": -15.93,
       "status": "early",
       "species_count": 2
     },
     {
       "zone": "east-low",
-      "anomaly_days": -4.07,
+      "anomaly_days": -4.03,
       "status": "normal",
       "species_count": 6
     },
     {
       "zone": "east-mid",
-      "anomaly_days": -5.85,
+      "anomaly_days": -5.82,
       "status": "normal",
       "species_count": 13
     },
     {
       "zone": "west-high",
-      "anomaly_days": -22.96,
+      "anomaly_days": -22.82,
       "status": "early",
       "species_count": 2
     },
     {
       "zone": "west-low",
-      "anomaly_days": -6.66,
+      "anomaly_days": -6.65,
       "status": "normal",
       "species_count": 23
     },
     {
       "zone": "west-mid",
-      "anomaly_days": -2.95,
+      "anomaly_days": -3.38,
       "status": "normal",
       "species_count": 8
     }
@@ -235,7 +235,7 @@
       "taxon_url": "https://www.inaturalist.org/taxa/49463",
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/483944196/medium.jpg",
       "status": "late",
-      "anomaly_days": 52.93,
+      "anomaly_days": 53.93,
       "zones_used": 5,
       "granularity": "zone",
       "zones": [
@@ -243,7 +243,7 @@
           "zone": "west-low",
           "baseline_doy": 95.0,
           "current_doy": null,
-          "anomaly_days": 90.0,
+          "anomaly_days": 91.0,
           "status": "late",
           "baseline_years": 5,
           "current_obs": 0,
@@ -253,7 +253,7 @@
           "zone": "west-mid",
           "baseline_doy": 126.3,
           "current_doy": null,
-          "anomaly_days": 58.7,
+          "anomaly_days": 59.7,
           "status": "late",
           "baseline_years": 4,
           "current_obs": 0,
@@ -263,7 +263,7 @@
           "zone": "east-mid",
           "baseline_doy": 129.0,
           "current_doy": null,
-          "anomaly_days": 56.0,
+          "anomaly_days": 57.0,
           "status": "late",
           "baseline_years": 4,
           "current_obs": 0,
@@ -273,7 +273,7 @@
           "zone": "east-high",
           "baseline_doy": 151.6,
           "current_doy": null,
-          "anomaly_days": 33.4,
+          "anomaly_days": 34.4,
           "status": "late",
           "baseline_years": 4,
           "current_obs": 0,
@@ -283,7 +283,7 @@
           "zone": "west-high",
           "baseline_doy": 167.7,
           "current_doy": null,
-          "anomaly_days": 17.3,
+          "anomaly_days": 18.3,
           "status": "late",
           "baseline_years": 4,
           "current_obs": 0,
@@ -998,18 +998,18 @@
       "taxon_url": "https://www.inaturalist.org/taxa/52858",
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/511529038/medium.jpg",
       "status": "early",
-      "anomaly_days": -7.51,
+      "anomaly_days": -8.46,
       "zones_used": 3,
       "granularity": "zone",
       "zones": [
         {
           "zone": "west-mid",
           "baseline_doy": 159.4,
-          "current_doy": 115.4,
-          "anomaly_days": -44.0,
+          "current_doy": 118.6,
+          "anomaly_days": -40.8,
           "status": "early",
           "baseline_years": 4,
-          "current_obs": 3,
+          "current_obs": 4,
           "has_current": true
         },
         {
@@ -1033,9 +1033,15 @@
           "has_current": true
         }
       ],
-      "current_obs_total": 15,
+      "current_obs_total": 16,
       "has_current_data": true,
       "current_year_observations": [
+        {
+          "observed_on": "2026-07-03",
+          "uri": "https://www.inaturalist.org/observations/378230490",
+          "place_guess": "Mason County, WA, USA",
+          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/691736837/square.jpg"
+        },
         {
           "observed_on": "2026-06-24",
           "uri": "https://www.inaturalist.org/observations/375135151",
@@ -1119,15 +1125,9 @@
           "uri": "https://www.inaturalist.org/observations/351110260",
           "place_guess": "St Marks Greenbelt, Seattle, WA, US",
           "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/640688469/square.jpg"
-        },
-        {
-          "observed_on": "2026-03-18",
-          "uri": "https://www.inaturalist.org/observations/343741747",
-          "place_guess": "10th Ave E & E Galer St, Seattle, WA 98102, USA",
-          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/626224158/square.jpg"
         }
       ],
-      "observation_count": 150
+      "observation_count": 151
     },
     {
       "species": "Viola glabella",
@@ -1137,7 +1137,7 @@
       "taxon_url": "https://www.inaturalist.org/taxa/71113",
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/291898703/medium.jpg",
       "status": "normal",
-      "anomaly_days": 3.13,
+      "anomaly_days": 3.19,
       "zones_used": 3,
       "granularity": "zone",
       "zones": [
@@ -1145,7 +1145,7 @@
           "zone": "east-mid",
           "baseline_doy": 126.8,
           "current_doy": null,
-          "anomaly_days": 58.2,
+          "anomaly_days": 59.2,
           "status": "late",
           "baseline_years": 6,
           "current_obs": 0,
@@ -1343,7 +1343,7 @@
       "taxon_url": "https://www.inaturalist.org/taxa/51048",
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/76022505/medium.jpg",
       "status": "late",
-      "anomaly_days": 45.7,
+      "anomaly_days": 46.7,
       "zones_used": 3,
       "granularity": "zone",
       "zones": [
@@ -1351,7 +1351,7 @@
           "zone": "west-low",
           "baseline_doy": 113.0,
           "current_doy": null,
-          "anomaly_days": 72.0,
+          "anomaly_days": 73.0,
           "status": "late",
           "baseline_years": 9,
           "current_obs": 0,
@@ -1361,7 +1361,7 @@
           "zone": "west-mid",
           "baseline_doy": 143.0,
           "current_doy": null,
-          "anomaly_days": 42.0,
+          "anomaly_days": 43.0,
           "status": "late",
           "baseline_years": 7,
           "current_obs": 0,
@@ -1371,7 +1371,7 @@
           "zone": "east-mid",
           "baseline_doy": 169.4,
           "current_doy": null,
-          "anomaly_days": 15.6,
+          "anomaly_days": 16.6,
           "status": "late",
           "baseline_years": 7,
           "current_obs": 0,
@@ -1412,11 +1412,11 @@
           "anomaly_days": 5.0,
           "status": "normal",
           "baseline_years": 9,
-          "current_obs": 56,
+          "current_obs": 57,
           "has_current": true
         }
       ],
-      "current_obs_total": 58,
+      "current_obs_total": 59,
       "has_current_data": true,
       "current_year_observations": [
         {
@@ -1510,7 +1510,7 @@
           "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/665323169/square.jpg"
         }
       ],
-      "observation_count": 644
+      "observation_count": 645
     },
     {
       "species": "Tellima grandiflora",
@@ -1649,7 +1649,7 @@
       "taxon_url": "https://www.inaturalist.org/taxa/48227",
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/494655644/medium.jpg",
       "status": "early",
-      "anomaly_days": -7.36,
+      "anomaly_days": -7.33,
       "zones_used": 2,
       "granularity": "zone",
       "zones": [
@@ -1657,7 +1657,7 @@
           "zone": "east-low",
           "baseline_doy": 100.4,
           "current_doy": null,
-          "anomaly_days": 84.6,
+          "anomaly_days": 85.6,
           "status": "late",
           "baseline_years": 6,
           "current_obs": 0,
