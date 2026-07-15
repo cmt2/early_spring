@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-14T14:01:33Z",
-  "analysis_date": "2026-07-14",
+  "generated_at": "2026-07-15T14:01:38Z",
+  "analysis_date": "2026-07-15",
   "wa_place_id": 46,
   "years": {
     "baseline_start": 2017,
@@ -32,25 +32,25 @@
   "zone_summary": [
     {
       "zone": "east-high",
-      "anomaly_days": -13.68,
+      "anomaly_days": -13.43,
       "status": "early",
       "species_count": 2
     },
     {
       "zone": "east-low",
-      "anomaly_days": -3.62,
+      "anomaly_days": -3.58,
       "status": "normal",
       "species_count": 6
     },
     {
       "zone": "east-mid",
-      "anomaly_days": -5.57,
+      "anomaly_days": -5.56,
       "status": "normal",
       "species_count": 13
     },
     {
       "zone": "west-high",
-      "anomaly_days": -21.58,
+      "anomaly_days": -21.44,
       "status": "early",
       "species_count": 2
     },
@@ -62,7 +62,7 @@
     },
     {
       "zone": "west-mid",
-      "anomaly_days": -2.96,
+      "anomaly_days": -2.92,
       "status": "normal",
       "species_count": 8
     }
@@ -235,7 +235,7 @@
       "taxon_url": "https://www.inaturalist.org/taxa/49463",
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/483944196/medium.jpg",
       "status": "late",
-      "anomaly_days": 62.93,
+      "anomaly_days": 63.93,
       "zones_used": 5,
       "granularity": "zone",
       "zones": [
@@ -243,7 +243,7 @@
           "zone": "west-low",
           "baseline_doy": 95.0,
           "current_doy": null,
-          "anomaly_days": 100.0,
+          "anomaly_days": 101.0,
           "status": "late",
           "baseline_years": 5,
           "current_obs": 0,
@@ -253,7 +253,7 @@
           "zone": "west-mid",
           "baseline_doy": 126.3,
           "current_doy": null,
-          "anomaly_days": 68.7,
+          "anomaly_days": 69.7,
           "status": "late",
           "baseline_years": 4,
           "current_obs": 0,
@@ -263,7 +263,7 @@
           "zone": "east-mid",
           "baseline_doy": 129.0,
           "current_doy": null,
-          "anomaly_days": 66.0,
+          "anomaly_days": 67.0,
           "status": "late",
           "baseline_years": 4,
           "current_obs": 0,
@@ -273,7 +273,7 @@
           "zone": "east-high",
           "baseline_doy": 151.6,
           "current_doy": null,
-          "anomaly_days": 43.4,
+          "anomaly_days": 44.4,
           "status": "late",
           "baseline_years": 4,
           "current_obs": 0,
@@ -283,7 +283,7 @@
           "zone": "west-high",
           "baseline_doy": 167.7,
           "current_doy": null,
-          "anomaly_days": 27.3,
+          "anomaly_days": 28.3,
           "status": "late",
           "baseline_years": 4,
           "current_obs": 0,
@@ -998,7 +998,7 @@
       "taxon_url": "https://www.inaturalist.org/taxa/52858",
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/511529038/medium.jpg",
       "status": "early",
-      "anomaly_days": -8.46,
+      "anomaly_days": -8.36,
       "zones_used": 3,
       "granularity": "zone",
       "zones": [
@@ -1015,11 +1015,11 @@
         {
           "zone": "east-mid",
           "baseline_doy": 150.0,
-          "current_doy": 139.0,
-          "anomaly_days": -11.0,
+          "current_doy": 140.0,
+          "anomaly_days": -10.0,
           "status": "early",
           "baseline_years": 7,
-          "current_obs": 3,
+          "current_obs": 4,
           "has_current": true
         },
         {
@@ -1033,9 +1033,15 @@
           "has_current": true
         }
       ],
-      "current_obs_total": 16,
+      "current_obs_total": 17,
       "has_current_data": true,
       "current_year_observations": [
+        {
+          "observed_on": "2026-07-04",
+          "uri": "https://www.inaturalist.org/observations/381270764",
+          "place_guess": "Gifford Pinchot National Forest, WA, USA",
+          "photo_url": "https://static.inaturalist.org/photos/697617450/square.jpg"
+        },
         {
           "observed_on": "2026-07-03",
           "uri": "https://www.inaturalist.org/observations/378230490",
@@ -1119,15 +1125,9 @@
           "uri": "https://www.inaturalist.org/observations/351298900",
           "place_guess": "Hoodsport, WA 98548, USA",
           "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/641052750/square.jpg"
-        },
-        {
-          "observed_on": "2026-04-18",
-          "uri": "https://www.inaturalist.org/observations/351110260",
-          "place_guess": "St Marks Greenbelt, Seattle, WA, US",
-          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/640688469/square.jpg"
         }
       ],
-      "observation_count": 151
+      "observation_count": 152
     },
     {
       "species": "Viola glabella",
@@ -1137,7 +1137,7 @@
       "taxon_url": "https://www.inaturalist.org/taxa/71113",
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/291898703/medium.jpg",
       "status": "normal",
-      "anomaly_days": 3.72,
+      "anomaly_days": 3.78,
       "zones_used": 3,
       "granularity": "zone",
       "zones": [
@@ -1145,7 +1145,7 @@
           "zone": "east-mid",
           "baseline_doy": 126.8,
           "current_doy": null,
-          "anomaly_days": 68.2,
+          "anomaly_days": 69.2,
           "status": "late",
           "baseline_years": 6,
           "current_obs": 0,
@@ -1343,7 +1343,7 @@
       "taxon_url": "https://www.inaturalist.org/taxa/51048",
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/76022505/medium.jpg",
       "status": "late",
-      "anomaly_days": 55.7,
+      "anomaly_days": 56.7,
       "zones_used": 3,
       "granularity": "zone",
       "zones": [
@@ -1351,7 +1351,7 @@
           "zone": "west-low",
           "baseline_doy": 113.0,
           "current_doy": null,
-          "anomaly_days": 82.0,
+          "anomaly_days": 83.0,
           "status": "late",
           "baseline_years": 9,
           "current_obs": 0,
@@ -1361,7 +1361,7 @@
           "zone": "west-mid",
           "baseline_doy": 143.0,
           "current_doy": null,
-          "anomaly_days": 52.0,
+          "anomaly_days": 53.0,
           "status": "late",
           "baseline_years": 7,
           "current_obs": 0,
@@ -1371,7 +1371,7 @@
           "zone": "east-mid",
           "baseline_doy": 169.4,
           "current_doy": null,
-          "anomaly_days": 25.6,
+          "anomaly_days": 26.6,
           "status": "late",
           "baseline_years": 7,
           "current_obs": 0,
@@ -1510,7 +1510,7 @@
           "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/665323169/square.jpg"
         }
       ],
-      "observation_count": 645
+      "observation_count": 646
     },
     {
       "species": "Tellima grandiflora",
@@ -1649,7 +1649,7 @@
       "taxon_url": "https://www.inaturalist.org/taxa/48227",
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/494655644/medium.jpg",
       "status": "early",
-      "anomaly_days": -7.14,
+      "anomaly_days": -7.12,
       "zones_used": 2,
       "granularity": "zone",
       "zones": [
@@ -1657,7 +1657,7 @@
           "zone": "east-low",
           "baseline_doy": 100.4,
           "current_doy": null,
-          "anomaly_days": 94.6,
+          "anomaly_days": 95.6,
           "status": "late",
           "baseline_years": 6,
           "current_obs": 0,
