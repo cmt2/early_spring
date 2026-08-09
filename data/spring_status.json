@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-08T14:02:22Z",
-  "analysis_date": "2026-08-08",
+  "generated_at": "2026-08-09T14:04:17Z",
+  "analysis_date": "2026-08-09",
   "wa_place_id": 46,
   "years": {
     "baseline_start": 2017,
@@ -24,7 +24,7 @@
   },
   "overall": {
     "status": "normal",
-    "anomaly_days": -5.72,
+    "anomaly_days": -5.71,
     "species_count": 24,
     "species_with_signal": 24,
     "interpretation": "Flowering is close to the 2017-2025 baseline."
@@ -32,25 +32,25 @@
   "zone_summary": [
     {
       "zone": "east-high",
-      "anomaly_days": -7.43,
+      "anomaly_days": -7.18,
       "status": "early",
       "species_count": 2
     },
     {
       "zone": "east-low",
-      "anomaly_days": -2.49,
+      "anomaly_days": -2.45,
       "status": "normal",
       "species_count": 6
     },
     {
       "zone": "east-mid",
-      "anomaly_days": -5.19,
+      "anomaly_days": -5.17,
       "status": "normal",
       "species_count": 13
     },
     {
       "zone": "west-high",
-      "anomaly_days": -18.13,
+      "anomaly_days": -17.99,
       "status": "early",
       "species_count": 2
     },
@@ -62,7 +62,7 @@
     },
     {
       "zone": "west-mid",
-      "anomaly_days": -3.68,
+      "anomaly_days": -3.64,
       "status": "normal",
       "species_count": 8
     }
@@ -235,7 +235,7 @@
       "taxon_url": "https://www.inaturalist.org/taxa/49463",
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/483944196/medium.jpg",
       "status": "late",
-      "anomaly_days": 87.93,
+      "anomaly_days": 88.93,
       "zones_used": 5,
       "granularity": "zone",
       "zones": [
@@ -243,7 +243,7 @@
           "zone": "west-low",
           "baseline_doy": 95.0,
           "current_doy": null,
-          "anomaly_days": 125.0,
+          "anomaly_days": 126.0,
           "status": "late",
           "baseline_years": 5,
           "current_obs": 0,
@@ -253,7 +253,7 @@
           "zone": "west-mid",
           "baseline_doy": 126.3,
           "current_doy": null,
-          "anomaly_days": 93.7,
+          "anomaly_days": 94.7,
           "status": "late",
           "baseline_years": 4,
           "current_obs": 0,
@@ -263,7 +263,7 @@
           "zone": "east-mid",
           "baseline_doy": 129.0,
           "current_doy": null,
-          "anomaly_days": 91.0,
+          "anomaly_days": 92.0,
           "status": "late",
           "baseline_years": 4,
           "current_obs": 0,
@@ -273,7 +273,7 @@
           "zone": "east-high",
           "baseline_doy": 151.6,
           "current_doy": null,
-          "anomaly_days": 68.4,
+          "anomaly_days": 69.4,
           "status": "late",
           "baseline_years": 4,
           "current_obs": 0,
@@ -283,7 +283,7 @@
           "zone": "west-high",
           "baseline_doy": 167.7,
           "current_doy": null,
-          "anomaly_days": 52.3,
+          "anomaly_days": 53.3,
           "status": "late",
           "baseline_years": 4,
           "current_obs": 0,
@@ -1033,9 +1033,15 @@
           "has_current": true
         }
       ],
-      "current_obs_total": 22,
+      "current_obs_total": 23,
       "has_current_data": true,
       "current_year_observations": [
+        {
+          "observed_on": "2026-08-08",
+          "uri": "https://www.inaturalist.org/observations/389475345",
+          "place_guess": "Mount Rainier National Park, Carbonado, WA, US",
+          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/713416326/square.jpg"
+        },
         {
           "observed_on": "2026-07-15",
           "uri": "https://www.inaturalist.org/observations/381853838",
@@ -1119,15 +1125,9 @@
           "uri": "https://www.inaturalist.org/observations/357409063",
           "place_guess": "Olympia, WA 98503, USA",
           "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/651885279/square.jpg"
-        },
-        {
-          "observed_on": "2026-05-01",
-          "uri": "https://www.inaturalist.org/observations/357409097",
-          "place_guess": "Olympia, WA 98503, USA",
-          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/651885324/square.jpg"
         }
       ],
-      "observation_count": 329
+      "observation_count": 330
     },
     {
       "species": "Asarum caudatum",
@@ -1391,7 +1391,7 @@
       "taxon_url": "https://www.inaturalist.org/taxa/51048",
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/76022505/medium.jpg",
       "status": "late",
-      "anomaly_days": 80.7,
+      "anomaly_days": 81.7,
       "zones_used": 3,
       "granularity": "zone",
       "zones": [
@@ -1399,7 +1399,7 @@
           "zone": "west-low",
           "baseline_doy": 113.0,
           "current_doy": null,
-          "anomaly_days": 107.0,
+          "anomaly_days": 108.0,
           "status": "late",
           "baseline_years": 9,
           "current_obs": 0,
@@ -1409,7 +1409,7 @@
           "zone": "west-mid",
           "baseline_doy": 143.0,
           "current_doy": null,
-          "anomaly_days": 77.0,
+          "anomaly_days": 78.0,
           "status": "late",
           "baseline_years": 7,
           "current_obs": 0,
@@ -1419,7 +1419,7 @@
           "zone": "east-mid",
           "baseline_doy": 169.4,
           "current_doy": null,
-          "anomaly_days": 50.6,
+          "anomaly_days": 51.6,
           "status": "late",
           "baseline_years": 7,
           "current_obs": 0,
@@ -1464,7 +1464,7 @@
           "has_current": true
         }
       ],
-      "current_obs_total": 102,
+      "current_obs_total": 103,
       "has_current_data": true,
       "current_year_observations": [
         {
@@ -1490,6 +1490,12 @@
           "uri": "https://www.inaturalist.org/observations/386698617",
           "place_guess": "Skamania County, US-WA, US",
           "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/708038519/square.jpg"
+        },
+        {
+          "observed_on": "2026-07-29",
+          "uri": "https://www.inaturalist.org/observations/389509608",
+          "place_guess": "Enumclaw, WA 98022, USA",
+          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/713484049/square.jpg"
         },
         {
           "observed_on": "2026-07-29",
@@ -1550,12 +1556,6 @@
           "uri": "https://www.inaturalist.org/observations/383203205",
           "place_guess": "Washington, US",
           "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/701345568/square.jpg"
-        },
-        {
-          "observed_on": "2026-07-18",
-          "uri": "https://www.inaturalist.org/observations/382835625",
-          "place_guess": "Eatonville, WA 98328, USA",
-          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/700637069/square.jpg"
         }
       ],
       "observation_count": 693
@@ -1697,7 +1697,7 @@
       "taxon_url": "https://www.inaturalist.org/taxa/48227",
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/494655644/medium.jpg",
       "status": "normal",
-      "anomaly_days": -6.1,
+      "anomaly_days": -6.08,
       "zones_used": 2,
       "granularity": "zone",
       "zones": [
@@ -1705,7 +1705,7 @@
           "zone": "east-low",
           "baseline_doy": 100.4,
           "current_doy": null,
-          "anomaly_days": 119.6,
+          "anomaly_days": 120.6,
           "status": "late",
           "baseline_years": 6,
           "current_obs": 0,
@@ -2165,7 +2165,7 @@
           "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/650896982/square.jpg"
         }
       ],
-      "observation_count": 448
+      "observation_count": 449
     },
     {
       "species": "Vaccinium ovatum",
