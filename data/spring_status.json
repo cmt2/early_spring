@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-11T14:34:10Z",
-  "analysis_date": "2026-08-11",
+  "generated_at": "2026-08-12T14:36:36Z",
+  "analysis_date": "2026-08-12",
   "wa_place_id": 46,
   "years": {
     "baseline_start": 2017,
@@ -32,25 +32,25 @@
   "zone_summary": [
     {
       "zone": "east-high",
-      "anomaly_days": -6.68,
+      "anomaly_days": -6.43,
       "status": "normal",
       "species_count": 2
     },
     {
       "zone": "east-low",
-      "anomaly_days": -2.36,
+      "anomaly_days": -2.31,
       "status": "normal",
       "species_count": 6
     },
     {
       "zone": "east-mid",
-      "anomaly_days": -5.13,
+      "anomaly_days": -5.12,
       "status": "normal",
       "species_count": 13
     },
     {
       "zone": "west-high",
-      "anomaly_days": -17.72,
+      "anomaly_days": -17.58,
       "status": "early",
       "species_count": 2
     },
@@ -62,7 +62,7 @@
     },
     {
       "zone": "west-mid",
-      "anomaly_days": -3.57,
+      "anomaly_days": -3.66,
       "status": "normal",
       "species_count": 8
     }
@@ -235,7 +235,7 @@
       "taxon_url": "https://www.inaturalist.org/taxa/49463",
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/483944196/medium.jpg",
       "status": "late",
-      "anomaly_days": 90.93,
+      "anomaly_days": 91.93,
       "zones_used": 5,
       "granularity": "zone",
       "zones": [
@@ -243,7 +243,7 @@
           "zone": "west-low",
           "baseline_doy": 95.0,
           "current_doy": null,
-          "anomaly_days": 128.0,
+          "anomaly_days": 129.0,
           "status": "late",
           "baseline_years": 5,
           "current_obs": 0,
@@ -253,7 +253,7 @@
           "zone": "west-mid",
           "baseline_doy": 126.3,
           "current_doy": null,
-          "anomaly_days": 96.7,
+          "anomaly_days": 97.7,
           "status": "late",
           "baseline_years": 4,
           "current_obs": 0,
@@ -263,7 +263,7 @@
           "zone": "east-mid",
           "baseline_doy": 129.0,
           "current_doy": null,
-          "anomaly_days": 94.0,
+          "anomaly_days": 95.0,
           "status": "late",
           "baseline_years": 4,
           "current_obs": 0,
@@ -273,7 +273,7 @@
           "zone": "east-high",
           "baseline_doy": 151.6,
           "current_doy": null,
-          "anomaly_days": 71.4,
+          "anomaly_days": 72.4,
           "status": "late",
           "baseline_years": 4,
           "current_obs": 0,
@@ -283,7 +283,7 @@
           "zone": "west-high",
           "baseline_doy": 167.7,
           "current_doy": null,
-          "anomaly_days": 55.3,
+          "anomaly_days": 56.3,
           "status": "late",
           "baseline_years": 4,
           "current_obs": 0,
@@ -440,7 +440,7 @@
       "common_name": "western skunk cabbage",
       "taxon_id": 48537,
       "taxon_url": "https://www.inaturalist.org/taxa/48537",
-      "photo_url": "https://static.inaturalist.org/photos/107900/medium.jpg",
+      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/65701886/medium.jpeg",
       "status": "normal",
       "anomaly_days": -3.25,
       "zones_used": 3,
@@ -1381,7 +1381,7 @@
           "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/630811205/square.jpg"
         }
       ],
-      "observation_count": 534
+      "observation_count": 535
     },
     {
       "species": "Dicentra formosa",
@@ -1391,7 +1391,7 @@
       "taxon_url": "https://www.inaturalist.org/taxa/51048",
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/76022505/medium.jpg",
       "status": "late",
-      "anomaly_days": 83.7,
+      "anomaly_days": 84.7,
       "zones_used": 3,
       "granularity": "zone",
       "zones": [
@@ -1399,7 +1399,7 @@
           "zone": "west-low",
           "baseline_doy": 113.0,
           "current_doy": null,
-          "anomaly_days": 110.0,
+          "anomaly_days": 111.0,
           "status": "late",
           "baseline_years": 9,
           "current_obs": 0,
@@ -1409,7 +1409,7 @@
           "zone": "west-mid",
           "baseline_doy": 143.0,
           "current_doy": null,
-          "anomaly_days": 80.0,
+          "anomaly_days": 81.0,
           "status": "late",
           "baseline_years": 7,
           "current_obs": 0,
@@ -1419,7 +1419,7 @@
           "zone": "east-mid",
           "baseline_doy": 169.4,
           "current_doy": null,
-          "anomaly_days": 53.6,
+          "anomaly_days": 54.6,
           "status": "late",
           "baseline_years": 7,
           "current_obs": 0,
@@ -1439,7 +1439,7 @@
       "taxon_url": "https://www.inaturalist.org/taxa/55767",
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/104700784/medium.jpg",
       "status": "normal",
-      "anomaly_days": 3.52,
+      "anomaly_days": 3.43,
       "zones_used": 2,
       "granularity": "zone",
       "zones": [
@@ -1450,7 +1450,7 @@
           "anomaly_days": -13.4,
           "status": "early",
           "baseline_years": 4,
-          "current_obs": 16,
+          "current_obs": 17,
           "has_current": true
         },
         {
@@ -1464,7 +1464,7 @@
           "has_current": true
         }
       ],
-      "current_obs_total": 104,
+      "current_obs_total": 105,
       "has_current_data": true,
       "current_year_observations": [
         {
@@ -1510,6 +1510,12 @@
           "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/706817754/square.jpg"
         },
         {
+          "observed_on": "2026-07-26",
+          "uri": "https://www.inaturalist.org/observations/390138413",
+          "place_guess": "Stevenson, WA 98648, USA",
+          "photo_url": "https://static.inaturalist.org/photos/714713405/square.jpg"
+        },
+        {
           "observed_on": "2026-07-25",
           "uri": "https://www.inaturalist.org/observations/385530547",
           "place_guess": "Chehalis, WA, US",
@@ -1550,15 +1556,9 @@
           "uri": "https://www.inaturalist.org/observations/382652197",
           "place_guess": "Skamokawa Valley",
           "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/700280119/square.jpg"
-        },
-        {
-          "observed_on": "2026-07-18",
-          "uri": "https://www.inaturalist.org/observations/383203205",
-          "place_guess": "Washington, US",
-          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/701345568/square.jpg"
         }
       ],
-      "observation_count": 695
+      "observation_count": 696
     },
     {
       "species": "Tellima grandiflora",
@@ -1697,7 +1697,7 @@
       "taxon_url": "https://www.inaturalist.org/taxa/48227",
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/494655644/medium.jpg",
       "status": "normal",
-      "anomaly_days": -6.03,
+      "anomaly_days": -6.01,
       "zones_used": 2,
       "granularity": "zone",
       "zones": [
@@ -1705,7 +1705,7 @@
           "zone": "east-low",
           "baseline_doy": 100.4,
           "current_doy": null,
-          "anomaly_days": 122.6,
+          "anomaly_days": 123.6,
           "status": "late",
           "baseline_years": 6,
           "current_obs": 0,
