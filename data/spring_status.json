@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-22T13:48:25Z",
-  "analysis_date": "2026-08-22",
+  "generated_at": "2026-08-23T13:51:03Z",
+  "analysis_date": "2026-08-23",
   "wa_place_id": 46,
   "years": {
     "baseline_start": 2017,
@@ -32,25 +32,25 @@
   "zone_summary": [
     {
       "zone": "east-high",
-      "anomaly_days": -3.93,
+      "anomaly_days": -3.68,
       "status": "normal",
       "species_count": 2
     },
     {
       "zone": "east-low",
-      "anomaly_days": -1.86,
+      "anomaly_days": -1.82,
       "status": "normal",
       "species_count": 6
     },
     {
       "zone": "east-mid",
-      "anomaly_days": -4.94,
+      "anomaly_days": -4.96,
       "status": "normal",
       "species_count": 13
     },
     {
       "zone": "west-high",
-      "anomaly_days": -16.2,
+      "anomaly_days": -16.06,
       "status": "early",
       "species_count": 2
     },
@@ -62,7 +62,7 @@
     },
     {
       "zone": "west-mid",
-      "anomaly_days": -3.32,
+      "anomaly_days": -3.28,
       "status": "normal",
       "species_count": 8
     }
@@ -235,7 +235,7 @@
       "taxon_url": "https://www.inaturalist.org/taxa/49463",
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/483944196/medium.jpg",
       "status": "late",
-      "anomaly_days": 101.93,
+      "anomaly_days": 102.93,
       "zones_used": 5,
       "granularity": "zone",
       "zones": [
@@ -243,7 +243,7 @@
           "zone": "west-low",
           "baseline_doy": 95.0,
           "current_doy": null,
-          "anomaly_days": 139.0,
+          "anomaly_days": 140.0,
           "status": "late",
           "baseline_years": 5,
           "current_obs": 0,
@@ -253,7 +253,7 @@
           "zone": "west-mid",
           "baseline_doy": 126.3,
           "current_doy": null,
-          "anomaly_days": 107.7,
+          "anomaly_days": 108.7,
           "status": "late",
           "baseline_years": 4,
           "current_obs": 0,
@@ -263,7 +263,7 @@
           "zone": "east-mid",
           "baseline_doy": 129.0,
           "current_doy": null,
-          "anomaly_days": 105.0,
+          "anomaly_days": 106.0,
           "status": "late",
           "baseline_years": 4,
           "current_obs": 0,
@@ -273,7 +273,7 @@
           "zone": "east-high",
           "baseline_doy": 151.6,
           "current_doy": null,
-          "anomaly_days": 82.4,
+          "anomaly_days": 83.4,
           "status": "late",
           "baseline_years": 4,
           "current_obs": 0,
@@ -283,7 +283,7 @@
           "zone": "west-high",
           "baseline_doy": 167.7,
           "current_doy": null,
-          "anomaly_days": 66.3,
+          "anomaly_days": 67.3,
           "status": "late",
           "baseline_years": 4,
           "current_obs": 0,
@@ -1276,7 +1276,7 @@
       "taxon_url": "https://www.inaturalist.org/taxa/75415",
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/8047816/medium.jpg",
       "status": "normal",
-      "anomaly_days": 2.16,
+      "anomaly_days": 0.75,
       "zones_used": 3,
       "granularity": "zone",
       "zones": [
@@ -1293,11 +1293,11 @@
         {
           "zone": "east-mid",
           "baseline_doy": 120.0,
-          "current_doy": 109.0,
-          "anomaly_days": -11.0,
+          "current_doy": 112.2,
+          "anomaly_days": -7.8,
           "status": "early",
           "baseline_years": 9,
-          "current_obs": 1,
+          "current_obs": 3,
           "has_current": true
         },
         {
@@ -1311,7 +1311,7 @@
           "has_current": true
         }
       ],
-      "current_obs_total": 11,
+      "current_obs_total": 13,
       "has_current_data": true,
       "current_year_observations": [
         {
@@ -1369,6 +1369,18 @@
           "photo_url": "https://static.inaturalist.org/photos/651740634/square.jpg"
         },
         {
+          "observed_on": "2026-04-27",
+          "uri": "https://www.inaturalist.org/observations/355986299",
+          "place_guess": "NW Stadium Way, Pullman, WA, US",
+          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/649184910/square.jpg"
+        },
+        {
+          "observed_on": "2026-04-27",
+          "uri": "https://www.inaturalist.org/observations/355985414",
+          "place_guess": "N Grand Ave, Pullman, WA, US",
+          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/649182958/square.jpg"
+        },
+        {
           "observed_on": "2026-04-19",
           "uri": "https://www.inaturalist.org/observations/351380008",
           "place_guess": "Grand Coulee, WA 99133, USA",
@@ -1381,7 +1393,7 @@
           "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/630811205/square.jpg"
         }
       ],
-      "observation_count": 535
+      "observation_count": 537
     },
     {
       "species": "Dicentra formosa",
@@ -1391,7 +1403,7 @@
       "taxon_url": "https://www.inaturalist.org/taxa/51048",
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/76022505/medium.jpg",
       "status": "late",
-      "anomaly_days": 94.7,
+      "anomaly_days": 95.7,
       "zones_used": 3,
       "granularity": "zone",
       "zones": [
@@ -1399,7 +1411,7 @@
           "zone": "west-low",
           "baseline_doy": 113.0,
           "current_doy": null,
-          "anomaly_days": 121.0,
+          "anomaly_days": 122.0,
           "status": "late",
           "baseline_years": 9,
           "current_obs": 0,
@@ -1409,7 +1421,7 @@
           "zone": "west-mid",
           "baseline_doy": 143.0,
           "current_doy": null,
-          "anomaly_days": 91.0,
+          "anomaly_days": 92.0,
           "status": "late",
           "baseline_years": 7,
           "current_obs": 0,
@@ -1419,7 +1431,7 @@
           "zone": "east-mid",
           "baseline_doy": 169.4,
           "current_doy": null,
-          "anomaly_days": 64.6,
+          "anomaly_days": 65.6,
           "status": "late",
           "baseline_years": 7,
           "current_obs": 0,
@@ -1697,7 +1709,7 @@
       "taxon_url": "https://www.inaturalist.org/taxa/48227",
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/494655644/medium.jpg",
       "status": "normal",
-      "anomaly_days": -5.8,
+      "anomaly_days": -5.78,
       "zones_used": 2,
       "granularity": "zone",
       "zones": [
@@ -1705,7 +1717,7 @@
           "zone": "east-low",
           "baseline_doy": 100.4,
           "current_doy": null,
-          "anomaly_days": 133.6,
+          "anomaly_days": 134.6,
           "status": "late",
           "baseline_years": 6,
           "current_obs": 0,
