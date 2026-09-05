@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-04T16:56:36Z",
-  "analysis_date": "2026-09-04",
+  "generated_at": "2026-09-05T16:09:34Z",
+  "analysis_date": "2026-09-05",
   "wa_place_id": 46,
   "years": {
     "baseline_start": 2017,
@@ -24,7 +24,7 @@
   },
   "overall": {
     "status": "normal",
-    "anomaly_days": -5.49,
+    "anomaly_days": -5.48,
     "species_count": 24,
     "species_with_signal": 24,
     "interpretation": "Flowering is close to the 2017-2025 baseline."
@@ -32,37 +32,37 @@
   "zone_summary": [
     {
       "zone": "east-high",
-      "anomaly_days": -0.68,
+      "anomaly_days": -0.43,
       "status": "normal",
       "species_count": 2
     },
     {
       "zone": "east-low",
-      "anomaly_days": -1.28,
+      "anomaly_days": -1.23,
       "status": "normal",
       "species_count": 6
     },
     {
       "zone": "east-mid",
-      "anomaly_days": -4.76,
+      "anomaly_days": -4.74,
       "status": "normal",
       "species_count": 13
     },
     {
       "zone": "west-high",
-      "anomaly_days": -14.41,
+      "anomaly_days": -14.27,
       "status": "early",
       "species_count": 2
     },
     {
       "zone": "west-low",
-      "anomaly_days": -5.62,
+      "anomaly_days": -5.61,
       "status": "normal",
       "species_count": 23
     },
     {
       "zone": "west-mid",
-      "anomaly_days": -2.87,
+      "anomaly_days": -2.84,
       "status": "normal",
       "species_count": 8
     }
@@ -235,7 +235,7 @@
       "taxon_url": "https://www.inaturalist.org/taxa/49463",
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/483944196/medium.jpg",
       "status": "late",
-      "anomaly_days": 114.93,
+      "anomaly_days": 115.93,
       "zones_used": 5,
       "granularity": "zone",
       "zones": [
@@ -243,7 +243,7 @@
           "zone": "west-low",
           "baseline_doy": 95.0,
           "current_doy": null,
-          "anomaly_days": 152.0,
+          "anomaly_days": 153.0,
           "status": "late",
           "baseline_years": 5,
           "current_obs": 0,
@@ -253,7 +253,7 @@
           "zone": "west-mid",
           "baseline_doy": 126.3,
           "current_doy": null,
-          "anomaly_days": 120.7,
+          "anomaly_days": 121.7,
           "status": "late",
           "baseline_years": 4,
           "current_obs": 0,
@@ -263,7 +263,7 @@
           "zone": "east-mid",
           "baseline_doy": 129.0,
           "current_doy": null,
-          "anomaly_days": 118.0,
+          "anomaly_days": 119.0,
           "status": "late",
           "baseline_years": 4,
           "current_obs": 0,
@@ -273,7 +273,7 @@
           "zone": "east-high",
           "baseline_doy": 151.6,
           "current_doy": null,
-          "anomaly_days": 95.4,
+          "anomaly_days": 96.4,
           "status": "late",
           "baseline_years": 4,
           "current_obs": 0,
@@ -283,7 +283,7 @@
           "zone": "west-high",
           "baseline_doy": 167.7,
           "current_doy": null,
-          "anomaly_days": 79.3,
+          "anomaly_days": 80.3,
           "status": "late",
           "baseline_years": 4,
           "current_obs": 0,
@@ -1403,7 +1403,7 @@
       "taxon_url": "https://www.inaturalist.org/taxa/51048",
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/76022505/medium.jpg",
       "status": "late",
-      "anomaly_days": 107.7,
+      "anomaly_days": 108.7,
       "zones_used": 3,
       "granularity": "zone",
       "zones": [
@@ -1411,7 +1411,7 @@
           "zone": "west-low",
           "baseline_doy": 113.0,
           "current_doy": null,
-          "anomaly_days": 134.0,
+          "anomaly_days": 135.0,
           "status": "late",
           "baseline_years": 9,
           "current_obs": 0,
@@ -1421,7 +1421,7 @@
           "zone": "west-mid",
           "baseline_doy": 143.0,
           "current_doy": null,
-          "anomaly_days": 104.0,
+          "anomaly_days": 105.0,
           "status": "late",
           "baseline_years": 7,
           "current_obs": 0,
@@ -1431,7 +1431,7 @@
           "zone": "east-mid",
           "baseline_doy": 169.4,
           "current_doy": null,
-          "anomaly_days": 77.6,
+          "anomaly_days": 78.6,
           "status": "late",
           "baseline_years": 7,
           "current_obs": 0,
@@ -1709,7 +1709,7 @@
       "taxon_url": "https://www.inaturalist.org/taxa/48227",
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/494655644/medium.jpg",
       "status": "normal",
-      "anomaly_days": -5.53,
+      "anomaly_days": -5.51,
       "zones_used": 2,
       "granularity": "zone",
       "zones": [
@@ -1717,7 +1717,7 @@
           "zone": "east-low",
           "baseline_doy": 100.4,
           "current_doy": null,
-          "anomaly_days": 146.6,
+          "anomaly_days": 147.6,
           "status": "late",
           "baseline_years": 6,
           "current_obs": 0,
@@ -2656,11 +2656,11 @@
           "anomaly_days": 9.3,
           "status": "late",
           "baseline_years": 8,
-          "current_obs": 7,
+          "current_obs": 8,
           "has_current": true
         }
       ],
-      "current_obs_total": 7,
+      "current_obs_total": 8,
       "has_current_data": true,
       "current_year_observations": [
         {
@@ -2668,6 +2668,12 @@
           "uri": "https://www.inaturalist.org/observations/365944724",
           "place_guess": "University Place, WA, USA",
           "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/668171193/square.jpg"
+        },
+        {
+          "observed_on": "2026-05-10",
+          "uri": "https://www.inaturalist.org/observations/360308404",
+          "place_guess": "Normar Pl, Blaine, WA, US",
+          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/657451548/square.jpg"
         },
         {
           "observed_on": "2026-05-10",
@@ -2706,7 +2712,7 @@
           "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/642245255/square.jpg"
         }
       ],
-      "observation_count": 296
+      "observation_count": 297
     },
     {
       "species": "Prunus emarginata",
