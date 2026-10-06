@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-05T21:21:59Z",
-  "analysis_date": "2026-10-05",
+  "generated_at": "2026-10-06T19:00:42Z",
+  "analysis_date": "2026-10-06",
   "wa_place_id": 46,
   "years": {
     "baseline_start": 2017,
@@ -32,37 +32,37 @@
   "zone_summary": [
     {
       "zone": "east-high",
-      "anomaly_days": 7.07,
+      "anomaly_days": 7.32,
       "status": "late",
       "species_count": 2
     },
     {
       "zone": "east-low",
-      "anomaly_days": -0.44,
+      "anomaly_days": -0.4,
       "status": "normal",
       "species_count": 6
     },
     {
       "zone": "east-mid",
-      "anomaly_days": -4.47,
+      "anomaly_days": -4.45,
       "status": "normal",
       "species_count": 13
     },
     {
       "zone": "west-high",
-      "anomaly_days": -10.13,
+      "anomaly_days": -9.99,
       "status": "early",
       "species_count": 2
     },
     {
       "zone": "west-low",
-      "anomaly_days": -5.55,
+      "anomaly_days": -5.54,
       "status": "normal",
       "species_count": 23
     },
     {
       "zone": "west-mid",
-      "anomaly_days": -1.82,
+      "anomaly_days": -1.78,
       "status": "normal",
       "species_count": 8
     }
@@ -235,7 +235,7 @@
       "taxon_url": "https://www.inaturalist.org/taxa/49463",
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/483944196/medium.jpg",
       "status": "late",
-      "anomaly_days": 145.93,
+      "anomaly_days": 146.93,
       "zones_used": 5,
       "granularity": "zone",
       "zones": [
@@ -243,7 +243,7 @@
           "zone": "west-low",
           "baseline_doy": 95.0,
           "current_doy": null,
-          "anomaly_days": 183.0,
+          "anomaly_days": 184.0,
           "status": "late",
           "baseline_years": 5,
           "current_obs": 0,
@@ -253,7 +253,7 @@
           "zone": "west-mid",
           "baseline_doy": 126.3,
           "current_doy": null,
-          "anomaly_days": 151.7,
+          "anomaly_days": 152.7,
           "status": "late",
           "baseline_years": 4,
           "current_obs": 0,
@@ -263,7 +263,7 @@
           "zone": "east-mid",
           "baseline_doy": 129.0,
           "current_doy": null,
-          "anomaly_days": 149.0,
+          "anomaly_days": 150.0,
           "status": "late",
           "baseline_years": 4,
           "current_obs": 0,
@@ -273,7 +273,7 @@
           "zone": "east-high",
           "baseline_doy": 151.6,
           "current_doy": null,
-          "anomaly_days": 126.4,
+          "anomaly_days": 127.4,
           "status": "late",
           "baseline_years": 4,
           "current_obs": 0,
@@ -283,7 +283,7 @@
           "zone": "west-high",
           "baseline_doy": 167.7,
           "current_doy": null,
-          "anomaly_days": 110.3,
+          "anomaly_days": 111.3,
           "status": "late",
           "baseline_years": 4,
           "current_obs": 0,
@@ -1415,7 +1415,7 @@
       "taxon_url": "https://www.inaturalist.org/taxa/51048",
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/76022505/medium.jpg",
       "status": "late",
-      "anomaly_days": 138.7,
+      "anomaly_days": 139.7,
       "zones_used": 3,
       "granularity": "zone",
       "zones": [
@@ -1423,7 +1423,7 @@
           "zone": "west-low",
           "baseline_doy": 113.0,
           "current_doy": null,
-          "anomaly_days": 165.0,
+          "anomaly_days": 166.0,
           "status": "late",
           "baseline_years": 9,
           "current_obs": 0,
@@ -1433,7 +1433,7 @@
           "zone": "west-mid",
           "baseline_doy": 143.0,
           "current_doy": null,
-          "anomaly_days": 135.0,
+          "anomaly_days": 136.0,
           "status": "late",
           "baseline_years": 7,
           "current_obs": 0,
@@ -1443,7 +1443,7 @@
           "zone": "east-mid",
           "baseline_doy": 169.4,
           "current_doy": null,
-          "anomaly_days": 108.6,
+          "anomaly_days": 109.6,
           "status": "late",
           "baseline_years": 7,
           "current_obs": 0,
@@ -1721,7 +1721,7 @@
       "taxon_url": "https://www.inaturalist.org/taxa/48227",
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/494655644/medium.jpg",
       "status": "normal",
-      "anomaly_days": -4.88,
+      "anomaly_days": -4.85,
       "zones_used": 2,
       "granularity": "zone",
       "zones": [
@@ -1729,7 +1729,7 @@
           "zone": "east-low",
           "baseline_doy": 100.4,
           "current_doy": null,
-          "anomaly_days": 177.6,
+          "anomaly_days": 178.6,
           "status": "late",
           "baseline_years": 6,
           "current_obs": 0,
