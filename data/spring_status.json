@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-16T22:57:50Z",
-  "analysis_date": "2026-11-16",
+  "generated_at": "2026-11-17T21:51:18Z",
+  "analysis_date": "2026-11-17",
   "wa_place_id": 46,
   "years": {
     "baseline_start": 2017,
@@ -24,7 +24,7 @@
   },
   "overall": {
     "status": "normal",
-    "anomaly_days": -4.91,
+    "anomaly_days": -2.46,
     "species_count": 24,
     "species_with_signal": 24,
     "interpretation": "Flowering is close to the 2017-2025 baseline."
@@ -32,37 +32,37 @@
   "zone_summary": [
     {
       "zone": "east-high",
-      "anomaly_days": 17.57,
+      "anomaly_days": 17.82,
       "status": "late",
       "species_count": 2
     },
     {
       "zone": "east-low",
-      "anomaly_days": 1.35,
+      "anomaly_days": 1.39,
       "status": "normal",
       "species_count": 6
     },
     {
       "zone": "east-mid",
-      "anomaly_days": -1.84,
+      "anomaly_days": -2.11,
       "status": "normal",
       "species_count": 13
     },
     {
       "zone": "west-high",
-      "anomaly_days": -4.34,
+      "anomaly_days": -4.2,
       "status": "normal",
       "species_count": 2
     },
     {
       "zone": "west-low",
-      "anomaly_days": -5.44,
+      "anomaly_days": -3.04,
       "status": "normal",
       "species_count": 23
     },
     {
       "zone": "west-mid",
-      "anomaly_days": 3.18,
+      "anomaly_days": 2.59,
       "status": "normal",
       "species_count": 8
     }
@@ -235,7 +235,7 @@
       "taxon_url": "https://www.inaturalist.org/taxa/49463",
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/483944196/medium.jpg",
       "status": "late",
-      "anomaly_days": 187.93,
+      "anomaly_days": 188.93,
       "zones_used": 5,
       "granularity": "zone",
       "zones": [
@@ -243,7 +243,7 @@
           "zone": "west-low",
           "baseline_doy": 95.0,
           "current_doy": null,
-          "anomaly_days": 225.0,
+          "anomaly_days": 226.0,
           "status": "late",
           "baseline_years": 5,
           "current_obs": 0,
@@ -253,7 +253,7 @@
           "zone": "west-mid",
           "baseline_doy": 126.3,
           "current_doy": null,
-          "anomaly_days": 193.7,
+          "anomaly_days": 194.7,
           "status": "late",
           "baseline_years": 4,
           "current_obs": 0,
@@ -263,7 +263,7 @@
           "zone": "east-mid",
           "baseline_doy": 129.0,
           "current_doy": null,
-          "anomaly_days": 191.0,
+          "anomaly_days": 192.0,
           "status": "late",
           "baseline_years": 4,
           "current_obs": 0,
@@ -273,7 +273,7 @@
           "zone": "east-high",
           "baseline_doy": 151.6,
           "current_doy": null,
-          "anomaly_days": 168.4,
+          "anomaly_days": 169.4,
           "status": "late",
           "baseline_years": 4,
           "current_obs": 0,
@@ -283,7 +283,7 @@
           "zone": "west-high",
           "baseline_doy": 167.7,
           "current_doy": null,
-          "anomaly_days": 152.3,
+          "anomaly_days": 153.3,
           "status": "late",
           "baseline_years": 4,
           "current_obs": 0,
@@ -433,145 +433,6 @@
         }
       ],
       "observation_count": 1190
-    },
-    {
-      "species": "Ribes sanguineum",
-      "slug": "ribes-sanguineum",
-      "common_name": "Red-flowering Currant",
-      "taxon_id": 53435,
-      "taxon_url": "https://www.inaturalist.org/taxa/53435",
-      "photo_url": "https://static.inaturalist.org/photos/72387844/medium.jpg",
-      "status": "early",
-      "anomaly_days": -18.34,
-      "zones_used": 3,
-      "granularity": "zone",
-      "zones": [
-        {
-          "zone": "west-mid",
-          "baseline_doy": 116.0,
-          "current_doy": null,
-          "anomaly_days": 204.0,
-          "status": "late",
-          "baseline_years": 5,
-          "current_obs": 0,
-          "has_current": false
-        },
-        {
-          "zone": "east-mid",
-          "baseline_doy": 134.7,
-          "current_doy": null,
-          "anomaly_days": 185.3,
-          "status": "late",
-          "baseline_years": 6,
-          "current_obs": 0,
-          "has_current": false
-        },
-        {
-          "zone": "west-low",
-          "baseline_doy": 85.0,
-          "current_doy": 65.0,
-          "anomaly_days": -20.0,
-          "status": "early",
-          "baseline_years": 9,
-          "current_obs": 156,
-          "has_current": true
-        }
-      ],
-      "current_obs_total": 156,
-      "has_current_data": true,
-      "current_year_observations": [
-        {
-          "observed_on": "2026-04-13",
-          "uri": "https://www.inaturalist.org/observations/349662518",
-          "place_guess": "Stanwood, WA 98282, USA",
-          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/637885855/square.jpg"
-        },
-        {
-          "observed_on": "2026-04-12",
-          "uri": "https://www.inaturalist.org/observations/350158192",
-          "place_guess": "Ferry Terminal Rd, Anacortes, WA, US",
-          "photo_url": "https://static.inaturalist.org/photos/638850159/square.jpg"
-        },
-        {
-          "observed_on": "2026-04-12",
-          "uri": "https://www.inaturalist.org/observations/349314701",
-          "place_guess": "2nd Ave SE & SE Andrews St (SB), Issaquah, WA 98027, USA",
-          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/637567310/square.jpg"
-        },
-        {
-          "observed_on": "2026-04-12",
-          "uri": "https://www.inaturalist.org/observations/349447029",
-          "place_guess": "Van Ry Blvd & Mountlake Terrace Station (SB), Mountlake Terrace, WA 98043, USA",
-          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/637464494/square.jpg"
-        },
-        {
-          "observed_on": "2026-04-12",
-          "uri": "https://www.inaturalist.org/observations/349528811",
-          "place_guess": "S 348th St, Federal Way, WA, US",
-          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/637624489/square.jpg"
-        },
-        {
-          "observed_on": "2026-04-11",
-          "uri": "https://www.inaturalist.org/observations/363264897",
-          "place_guess": "Lettered Streets, Bellingham, WA 98225, USA",
-          "photo_url": "https://static.inaturalist.org/photos/663086053/square.jpg"
-        },
-        {
-          "observed_on": "2026-04-11",
-          "uri": "https://www.inaturalist.org/observations/349111424",
-          "place_guess": "Black Diamond, WA, USA",
-          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/636798192/square.jpg"
-        },
-        {
-          "observed_on": "2026-04-11",
-          "uri": "https://www.inaturalist.org/observations/361319756",
-          "place_guess": "Everett, WA, US",
-          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/659400131/square.jpg"
-        },
-        {
-          "observed_on": "2026-04-10",
-          "uri": "https://www.inaturalist.org/observations/351516214",
-          "place_guess": "Washougal, WA, US",
-          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/641484054/square.jpg"
-        },
-        {
-          "observed_on": "2026-04-09",
-          "uri": "https://www.inaturalist.org/observations/348563146",
-          "place_guess": "Quilcene, WA, US",
-          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/635717762/square.jpg"
-        },
-        {
-          "observed_on": "2026-04-09",
-          "uri": "https://www.inaturalist.org/observations/348819769",
-          "place_guess": "Redmond, WA, USA",
-          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/636231319/square.jpg"
-        },
-        {
-          "observed_on": "2026-04-09",
-          "uri": "https://www.inaturalist.org/observations/348619933",
-          "place_guess": "Silverdale, WA, USA",
-          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/635832353/square.jpg"
-        },
-        {
-          "observed_on": "2026-04-08",
-          "uri": "https://www.inaturalist.org/observations/348338677",
-          "place_guess": "Sequim, WA 98382, USA",
-          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/635274628/square.jpg"
-        },
-        {
-          "observed_on": "2026-04-08",
-          "uri": "https://www.inaturalist.org/observations/348359466",
-          "place_guess": "Larrabee State Park, Bellingham, WA, US",
-          "photo_url": "https://static.inaturalist.org/photos/635315697/square.jpg"
-        },
-        {
-          "observed_on": "2026-04-08",
-          "uri": "https://www.inaturalist.org/observations/349400019",
-          "place_guess": "8th Ave SW, Seattle, WA, US",
-          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/637365224/square.jpg"
-        }
-      ],
-      "observation_count": 1400
     },
     {
       "species": "Camassia quamash",
@@ -1415,7 +1276,7 @@
       "taxon_url": "https://www.inaturalist.org/taxa/51048",
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/76022505/medium.jpg",
       "status": "late",
-      "anomaly_days": 181.01,
+      "anomaly_days": 182.01,
       "zones_used": 3,
       "granularity": "zone",
       "zones": [
@@ -1423,7 +1284,7 @@
           "zone": "west-low",
           "baseline_doy": 113.0,
           "current_doy": null,
-          "anomaly_days": 207.0,
+          "anomaly_days": 208.0,
           "status": "late",
           "baseline_years": 9,
           "current_obs": 0,
@@ -1433,7 +1294,7 @@
           "zone": "west-mid",
           "baseline_doy": 142.0,
           "current_doy": null,
-          "anomaly_days": 178.0,
+          "anomaly_days": 179.0,
           "status": "late",
           "baseline_years": 7,
           "current_obs": 0,
@@ -1443,9 +1304,57 @@
           "zone": "east-mid",
           "baseline_doy": 169.4,
           "current_doy": null,
-          "anomaly_days": 150.6,
+          "anomaly_days": 151.6,
           "status": "late",
           "baseline_years": 7,
+          "current_obs": 0,
+          "has_current": false
+        }
+      ],
+      "current_obs_total": 0,
+      "has_current_data": false,
+      "current_year_observations": [],
+      "observation_count": 1400
+    },
+    {
+      "species": "Ribes sanguineum",
+      "slug": "ribes-sanguineum",
+      "common_name": "Red-flowering Currant",
+      "taxon_id": 53435,
+      "taxon_url": "https://www.inaturalist.org/taxa/53435",
+      "photo_url": "https://static.inaturalist.org/photos/72387844/medium.jpg",
+      "status": "late",
+      "anomaly_days": 216.9,
+      "zones_used": 3,
+      "granularity": "zone",
+      "zones": [
+        {
+          "zone": "west-low",
+          "baseline_doy": 82.0,
+          "current_doy": null,
+          "anomaly_days": 239.0,
+          "status": "late",
+          "baseline_years": 9,
+          "current_obs": 0,
+          "has_current": false
+        },
+        {
+          "zone": "west-mid",
+          "baseline_doy": 115.2,
+          "current_doy": null,
+          "anomaly_days": 205.8,
+          "status": "late",
+          "baseline_years": 4,
+          "current_obs": 0,
+          "has_current": false
+        },
+        {
+          "zone": "east-mid",
+          "baseline_doy": 135.0,
+          "current_doy": null,
+          "anomaly_days": 186.0,
+          "status": "late",
+          "baseline_years": 5,
           "current_obs": 0,
           "has_current": false
         }
@@ -1721,7 +1630,7 @@
       "taxon_url": "https://www.inaturalist.org/taxa/48227",
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/494655644/medium.jpg",
       "status": "normal",
-      "anomaly_days": -3.99,
+      "anomaly_days": -3.97,
       "zones_used": 2,
       "granularity": "zone",
       "zones": [
@@ -1729,7 +1638,7 @@
           "zone": "east-low",
           "baseline_doy": 100.4,
           "current_doy": null,
-          "anomaly_days": 219.6,
+          "anomaly_days": 220.6,
           "status": "late",
           "baseline_years": 6,
           "current_obs": 0,
