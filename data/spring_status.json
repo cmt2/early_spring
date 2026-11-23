@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-22T20:25:12Z",
-  "analysis_date": "2026-11-22",
+  "generated_at": "2026-11-23T15:05:57Z",
+  "analysis_date": "2026-11-23",
   "wa_place_id": 46,
   "years": {
     "baseline_start": 2017,
@@ -24,7 +24,7 @@
   },
   "overall": {
     "status": "normal",
-    "anomaly_days": -2.41,
+    "anomaly_days": -3.46,
     "species_count": 24,
     "species_with_signal": 24,
     "interpretation": "Flowering is close to the 2017-2025 baseline."
@@ -32,42 +32,211 @@
   "zone_summary": [
     {
       "zone": "east-high",
-      "anomaly_days": 19.07,
-      "status": "late",
+      "anomaly_days": -5.96,
+      "status": "normal",
       "species_count": 2
     },
     {
       "zone": "east-low",
-      "anomaly_days": 1.6,
+      "anomaly_days": -0.05,
       "status": "normal",
-      "species_count": 6
+      "species_count": 7
     },
     {
       "zone": "east-mid",
-      "anomaly_days": -1.98,
+      "anomaly_days": -5.83,
       "status": "normal",
       "species_count": 13
     },
     {
       "zone": "west-high",
-      "anomaly_days": -3.51,
-      "status": "normal",
-      "species_count": 2
+      "anomaly_days": -20.43,
+      "status": "early",
+      "species_count": 3
     },
     {
       "zone": "west-low",
-      "anomaly_days": -3.03,
+      "anomaly_days": -3.82,
       "status": "normal",
       "species_count": 23
     },
     {
       "zone": "west-mid",
-      "anomaly_days": 4.04,
-      "status": "normal",
+      "anomaly_days": -10.67,
+      "status": "early",
       "species_count": 8
     }
   ],
   "indicator_species": [
+    {
+      "species": "Trillium ovatum",
+      "slug": "trillium-ovatum",
+      "common_name": "Pacific trillium",
+      "taxon_id": 49463,
+      "taxon_url": "https://www.inaturalist.org/taxa/49463",
+      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/483944196/medium.jpg",
+      "status": "normal",
+      "anomaly_days": 0.08,
+      "zones_used": 6,
+      "granularity": "zone",
+      "zones": [
+        {
+          "zone": "west-high",
+          "baseline_doy": 162.6,
+          "current_doy": 144.0,
+          "anomaly_days": -18.6,
+          "status": "early",
+          "baseline_years": 9,
+          "current_obs": 11,
+          "has_current": true
+        },
+        {
+          "zone": "west-mid",
+          "baseline_doy": 124.4,
+          "current_doy": 115.6,
+          "anomaly_days": -8.8,
+          "status": "early",
+          "baseline_years": 9,
+          "current_obs": 29,
+          "has_current": true
+        },
+        {
+          "zone": "east-low",
+          "baseline_doy": 107.5,
+          "current_doy": 100.0,
+          "anomaly_days": -7.5,
+          "status": "early",
+          "baseline_years": 8,
+          "current_obs": 4,
+          "has_current": true
+        },
+        {
+          "zone": "east-mid",
+          "baseline_doy": 125.8,
+          "current_doy": 123.0,
+          "anomaly_days": -2.8,
+          "status": "normal",
+          "baseline_years": 9,
+          "current_obs": 21,
+          "has_current": true
+        },
+        {
+          "zone": "east-high",
+          "baseline_doy": 152.0,
+          "current_doy": 149.6,
+          "anomaly_days": -2.4,
+          "status": "normal",
+          "baseline_years": 9,
+          "current_obs": 10,
+          "has_current": true
+        },
+        {
+          "zone": "west-low",
+          "baseline_doy": 94.0,
+          "current_doy": 96.0,
+          "anomaly_days": 2.0,
+          "status": "normal",
+          "baseline_years": 9,
+          "current_obs": 300,
+          "has_current": true
+        }
+      ],
+      "current_obs_total": 375,
+      "has_current_data": true,
+      "current_year_observations": [
+        {
+          "observed_on": "2026-06-23",
+          "uri": "https://www.inaturalist.org/observations/374765861",
+          "place_guess": "Ashford, WA 98304, USA",
+          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/685036181/square.jpg"
+        },
+        {
+          "observed_on": "2026-06-23",
+          "uri": "https://www.inaturalist.org/observations/375039188",
+          "place_guess": "Ashford, WA 98304, USA",
+          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/685559571/square.jpg"
+        },
+        {
+          "observed_on": "2026-06-13",
+          "uri": "https://www.inaturalist.org/observations/371759462",
+          "place_guess": "Kittitas County, WA, USA",
+          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/679244220/square.jpg"
+        },
+        {
+          "observed_on": "2026-06-13",
+          "uri": "https://www.inaturalist.org/observations/371759537",
+          "place_guess": "Kittitas County, WA, USA",
+          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/679244527/square.jpg"
+        },
+        {
+          "observed_on": "2026-06-11",
+          "uri": "https://www.inaturalist.org/observations/370833775",
+          "place_guess": "Comet Falls-Van Trump Trail, Ashford, WA, US",
+          "photo_url": "https://static.inaturalist.org/photos/677501344/square.jpg"
+        },
+        {
+          "observed_on": "2026-06-10",
+          "uri": "https://www.inaturalist.org/observations/371288642",
+          "place_guess": "Mount Rainier National Park, Packwood, WA, US",
+          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/678359523/square.jpg"
+        },
+        {
+          "observed_on": "2026-06-02",
+          "uri": "https://www.inaturalist.org/observations/368152245",
+          "place_guess": "Ptarmigan Trail, Cougar, WA, US",
+          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/672385300/square.jpg"
+        },
+        {
+          "observed_on": "2026-05-31",
+          "uri": "https://www.inaturalist.org/observations/413583417",
+          "place_guess": "Lower Big Quilcene Trail, Quilcene, WA, US",
+          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/761223835/square.jpg"
+        },
+        {
+          "observed_on": "2026-05-31",
+          "uri": "https://www.inaturalist.org/observations/367793383",
+          "place_guess": "Yakima County, WA, USA",
+          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/671684828/square.jpg"
+        },
+        {
+          "observed_on": "2026-05-31",
+          "uri": "https://www.inaturalist.org/observations/367310937",
+          "place_guess": "Mount Rainier, Mount Rainier National Park, Pierce County, US-WA, US",
+          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/670776473/square.jpg"
+        },
+        {
+          "observed_on": "2026-05-30",
+          "uri": "https://www.inaturalist.org/observations/366815282",
+          "place_guess": "Enumclaw, WA, US",
+          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/669815528/square.jpg"
+        },
+        {
+          "observed_on": "2026-05-30",
+          "uri": "https://www.inaturalist.org/observations/378298225",
+          "place_guess": "Denny Creek Trail, Snoqualmie Pass, WA, US",
+          "photo_url": "https://static.inaturalist.org/photos/691872121/square.jpg"
+        },
+        {
+          "observed_on": "2026-05-30",
+          "uri": "https://www.inaturalist.org/observations/378298195",
+          "place_guess": "Denny Creek Trail, Snoqualmie Pass, WA, US",
+          "photo_url": "https://static.inaturalist.org/photos/691872053/square.jpg"
+        },
+        {
+          "observed_on": "2026-05-30",
+          "uri": "https://www.inaturalist.org/observations/367178663",
+          "place_guess": "Kittitas County, WA, USA",
+          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/670510396/square.jpg"
+        },
+        {
+          "observed_on": "2026-05-30",
+          "uri": "https://www.inaturalist.org/observations/367178689",
+          "place_guess": "Kittitas County, WA, USA",
+          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/670510598/square.jpg"
+        }
+      ],
+      "observation_count": 4568
+    },
     {
       "species": "Fritillaria affinis",
       "slug": "fritillaria-affinis",
@@ -228,72 +397,292 @@
       "observation_count": 972
     },
     {
-      "species": "Trillium ovatum",
-      "slug": "trillium-ovatum",
-      "common_name": "Pacific trillium",
-      "taxon_id": 49463,
-      "taxon_url": "https://www.inaturalist.org/taxa/49463",
-      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/483944196/medium.jpg",
-      "status": "late",
-      "anomaly_days": 193.93,
-      "zones_used": 5,
+      "species": "Dicentra formosa",
+      "slug": "dicentra-formosa",
+      "common_name": "Pacific Bleeding Heart",
+      "taxon_id": 51048,
+      "taxon_url": "https://www.inaturalist.org/taxa/51048",
+      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/76022505/medium.jpg",
+      "status": "normal",
+      "anomaly_days": -5.74,
+      "zones_used": 4,
+      "granularity": "zone",
+      "zones": [
+        {
+          "zone": "west-mid",
+          "baseline_doy": 147.4,
+          "current_doy": 127.0,
+          "anomaly_days": -20.4,
+          "status": "early",
+          "baseline_years": 7,
+          "current_obs": 31,
+          "has_current": true
+        },
+        {
+          "zone": "west-high",
+          "baseline_doy": 180.3,
+          "current_doy": 162.0,
+          "anomaly_days": -18.3,
+          "status": "early",
+          "baseline_years": 4,
+          "current_obs": 5,
+          "has_current": true
+        },
+        {
+          "zone": "east-mid",
+          "baseline_doy": 169.4,
+          "current_doy": 162.8,
+          "anomaly_days": -6.6,
+          "status": "normal",
+          "baseline_years": 7,
+          "current_obs": 9,
+          "has_current": true
+        },
+        {
+          "zone": "west-low",
+          "baseline_doy": 113.0,
+          "current_doy": 109.0,
+          "anomaly_days": -4.0,
+          "status": "normal",
+          "baseline_years": 9,
+          "current_obs": 223,
+          "has_current": true
+        }
+      ],
+      "current_obs_total": 273,
+      "has_current_data": true,
+      "current_year_observations": [
+        {
+          "observed_on": "2026-11-12",
+          "uri": "https://www.inaturalist.org/observations/414439536",
+          "place_guess": "Hoodsport, WA 98548, USA",
+          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/762949779/square.jpg"
+        },
+        {
+          "observed_on": "2026-09-20",
+          "uri": "https://www.inaturalist.org/observations/402353418",
+          "place_guess": "Olympia, WA 98512, USA",
+          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/738622072/square.jpg"
+        },
+        {
+          "observed_on": "2026-09-19",
+          "uri": "https://www.inaturalist.org/observations/401701368",
+          "place_guess": "Barclay Lake Trail, Index, WA, US",
+          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/737319941/square.jpg"
+        },
+        {
+          "observed_on": "2026-09-14",
+          "uri": "https://www.inaturalist.org/observations/400328975",
+          "place_guess": "Washougal, WA 98671, USA",
+          "photo_url": "https://static.inaturalist.org/photos/734606993/square.jpg"
+        },
+        {
+          "observed_on": "2026-08-30",
+          "uri": "https://www.inaturalist.org/observations/396014226",
+          "place_guess": "Snohomish County, US-WA, US",
+          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/726197019/square.jpg"
+        },
+        {
+          "observed_on": "2026-08-30",
+          "uri": "https://www.inaturalist.org/observations/395976214",
+          "place_guess": "King County, US-WA, US",
+          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/726119052/square.jpg"
+        },
+        {
+          "observed_on": "2026-08-27",
+          "uri": "https://www.inaturalist.org/observations/395111429",
+          "place_guess": "Greenline Trail, Olympia, WA, US",
+          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/724436098/square.jpg"
+        },
+        {
+          "observed_on": "2026-08-26",
+          "uri": "https://www.inaturalist.org/observations/395375825",
+          "place_guess": "Lake Twentytwo, Granite Falls, WA, US",
+          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/724958380/square.jpg"
+        },
+        {
+          "observed_on": "2026-08-23",
+          "uri": "https://www.inaturalist.org/observations/394043536",
+          "place_guess": "Ike Kinswa State Park, Silver Creek, WA, US",
+          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/722337442/square.jpg"
+        },
+        {
+          "observed_on": "2026-08-23",
+          "uri": "https://www.inaturalist.org/observations/394049630",
+          "place_guess": "Harmony Trail, Carson, WA, US",
+          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/722350706/square.jpg"
+        },
+        {
+          "observed_on": "2026-08-23",
+          "uri": "https://www.inaturalist.org/observations/394058437",
+          "place_guess": "Harmony Trail, Carson, WA, US",
+          "photo_url": "https://static.inaturalist.org/photos/722366581/square.jpg"
+        },
+        {
+          "observed_on": "2026-08-23",
+          "uri": "https://www.inaturalist.org/observations/394049684",
+          "place_guess": "Harmony Trail, Carson, WA, US",
+          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/722350876/square.jpg"
+        },
+        {
+          "observed_on": "2026-08-17",
+          "uri": "https://www.inaturalist.org/observations/395023891",
+          "place_guess": "King County, WA, USA",
+          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/724262779/square.jpg"
+        },
+        {
+          "observed_on": "2026-08-03",
+          "uri": "https://www.inaturalist.org/observations/397185938",
+          "place_guess": "Issaquah, WA, US",
+          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/728454459/square.jpg"
+        },
+        {
+          "observed_on": "2026-07-31",
+          "uri": "https://www.inaturalist.org/observations/387405777",
+          "place_guess": "Birth Of A Lake, Toutle, WA, US",
+          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/709403489/square.jpg"
+        }
+      ],
+      "observation_count": 1772
+    },
+    {
+      "species": "Ribes sanguineum",
+      "slug": "ribes-sanguineum",
+      "common_name": "Red-flowering Currant",
+      "taxon_id": 53435,
+      "taxon_url": "https://www.inaturalist.org/taxa/53435",
+      "photo_url": "https://static.inaturalist.org/photos/72387844/medium.jpg",
+      "status": "early",
+      "anomaly_days": -13.32,
+      "zones_used": 3,
       "granularity": "zone",
       "zones": [
         {
           "zone": "west-low",
-          "baseline_doy": 95.0,
-          "current_doy": null,
-          "anomaly_days": 231.0,
-          "status": "late",
-          "baseline_years": 5,
-          "current_obs": 0,
-          "has_current": false
-        },
-        {
-          "zone": "west-mid",
-          "baseline_doy": 126.3,
-          "current_doy": null,
-          "anomaly_days": 199.7,
-          "status": "late",
-          "baseline_years": 4,
-          "current_obs": 0,
-          "has_current": false
+          "baseline_doy": 84.0,
+          "current_doy": 70.4,
+          "anomaly_days": -13.6,
+          "status": "early",
+          "baseline_years": 9,
+          "current_obs": 198,
+          "has_current": true
         },
         {
           "zone": "east-mid",
-          "baseline_doy": 129.0,
-          "current_doy": null,
-          "anomaly_days": 197.0,
-          "status": "late",
-          "baseline_years": 4,
-          "current_obs": 0,
-          "has_current": false
+          "baseline_doy": 134.7,
+          "current_doy": 129.2,
+          "anomaly_days": -5.5,
+          "status": "normal",
+          "baseline_years": 6,
+          "current_obs": 7,
+          "has_current": true
         },
         {
-          "zone": "east-high",
-          "baseline_doy": 151.6,
-          "current_doy": null,
-          "anomaly_days": 174.4,
-          "status": "late",
-          "baseline_years": 4,
-          "current_obs": 0,
-          "has_current": false
-        },
-        {
-          "zone": "west-high",
-          "baseline_doy": 167.7,
-          "current_doy": null,
-          "anomaly_days": 158.3,
-          "status": "late",
-          "baseline_years": 4,
-          "current_obs": 0,
-          "has_current": false
+          "zone": "west-mid",
+          "baseline_doy": 116.0,
+          "current_doy": 114.4,
+          "anomaly_days": -1.6,
+          "status": "normal",
+          "baseline_years": 5,
+          "current_obs": 3,
+          "has_current": true
         }
       ],
-      "current_obs_total": 0,
-      "has_current_data": false,
-      "current_year_observations": [],
-      "observation_count": 1400
+      "current_obs_total": 210,
+      "has_current_data": true,
+      "current_year_observations": [
+        {
+          "observed_on": "2026-05-25",
+          "uri": "https://www.inaturalist.org/observations/365408205",
+          "place_guess": "Kittitas County, WA, USA",
+          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/667148630/square.jpg"
+        },
+        {
+          "observed_on": "2026-05-24",
+          "uri": "https://www.inaturalist.org/observations/365278757",
+          "place_guess": "Packwood, WA 98361, USA",
+          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/666896226/square.jpg"
+        },
+        {
+          "observed_on": "2026-05-17",
+          "uri": "https://www.inaturalist.org/observations/362462070",
+          "place_guess": "Mt. Baker-Snoqualmie National Forest, Snoqualmie Pass, WA, US",
+          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/661554835/square.jpg"
+        },
+        {
+          "observed_on": "2026-05-17",
+          "uri": "https://www.inaturalist.org/observations/362931654",
+          "place_guess": "Snoqualmie Pass, WA 98068, USA",
+          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/662455178/square.jpg"
+        },
+        {
+          "observed_on": "2026-05-16",
+          "uri": "https://www.inaturalist.org/observations/362207043",
+          "place_guess": "Centennial Trail, Arlington, WA, US",
+          "photo_url": "https://static.inaturalist.org/photos/661075717/square.jpg"
+        },
+        {
+          "observed_on": "2026-05-12",
+          "uri": "https://www.inaturalist.org/observations/361741359",
+          "place_guess": "Ronald, WA 98940, USA",
+          "photo_url": "https://static.inaturalist.org/photos/660199242/square.jpg"
+        },
+        {
+          "observed_on": "2026-05-10",
+          "uri": "https://www.inaturalist.org/observations/360658820",
+          "place_guess": "Grassy Knoll Trail, Carson, WA, US",
+          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/658117159/square.jpg"
+        },
+        {
+          "observed_on": "2026-05-10",
+          "uri": "https://www.inaturalist.org/observations/360762169",
+          "place_guess": "Pyeatt Pl, Bellingham, WA, US",
+          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/658323715/square.jpg"
+        },
+        {
+          "observed_on": "2026-05-10",
+          "uri": "https://www.inaturalist.org/observations/360511137",
+          "place_guess": "Washington, US",
+          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/657838645/square.jpg"
+        },
+        {
+          "observed_on": "2026-05-09",
+          "uri": "https://www.inaturalist.org/observations/360447753",
+          "place_guess": "Beacon Rock Trail, North Bonneville, WA, US",
+          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/657719294/square.jpg"
+        },
+        {
+          "observed_on": "2026-05-09",
+          "uri": "https://www.inaturalist.org/observations/360046354",
+          "place_guess": "Okanogan - Wenatchee National Forest, Snoqualmie Pass, WA, US",
+          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/656962930/square.jpg"
+        },
+        {
+          "observed_on": "2026-05-09",
+          "uri": "https://www.inaturalist.org/observations/360061853",
+          "place_guess": "Upper Lake Creek Trail, Randle, WA, US",
+          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/656992674/square.jpg"
+        },
+        {
+          "observed_on": "2026-05-09",
+          "uri": "https://www.inaturalist.org/observations/360103473",
+          "place_guess": "Poulsbo, WA, US",
+          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/657077395/square.jpg"
+        },
+        {
+          "observed_on": "2026-05-09",
+          "uri": "https://www.inaturalist.org/observations/360103421",
+          "place_guess": "Poulsbo, WA, US",
+          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/657077207/square.jpg"
+        },
+        {
+          "observed_on": "2026-05-09",
+          "uri": "https://www.inaturalist.org/observations/361507440",
+          "place_guess": "Poulsbo, WA, US",
+          "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/659753648/square.jpg"
+        }
+      ],
+      "observation_count": 1803
     },
     {
       "species": "Lysichiton americanus",
@@ -1269,102 +1658,6 @@
       "observation_count": 540
     },
     {
-      "species": "Dicentra formosa",
-      "slug": "dicentra-formosa",
-      "common_name": "Pacific Bleeding Heart",
-      "taxon_id": 51048,
-      "taxon_url": "https://www.inaturalist.org/taxa/51048",
-      "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/76022505/medium.jpg",
-      "status": "late",
-      "anomaly_days": 187.01,
-      "zones_used": 3,
-      "granularity": "zone",
-      "zones": [
-        {
-          "zone": "west-low",
-          "baseline_doy": 113.0,
-          "current_doy": null,
-          "anomaly_days": 213.0,
-          "status": "late",
-          "baseline_years": 9,
-          "current_obs": 0,
-          "has_current": false
-        },
-        {
-          "zone": "west-mid",
-          "baseline_doy": 142.0,
-          "current_doy": null,
-          "anomaly_days": 184.0,
-          "status": "late",
-          "baseline_years": 7,
-          "current_obs": 0,
-          "has_current": false
-        },
-        {
-          "zone": "east-mid",
-          "baseline_doy": 169.4,
-          "current_doy": null,
-          "anomaly_days": 156.6,
-          "status": "late",
-          "baseline_years": 7,
-          "current_obs": 0,
-          "has_current": false
-        }
-      ],
-      "current_obs_total": 0,
-      "has_current_data": false,
-      "current_year_observations": [],
-      "observation_count": 1400
-    },
-    {
-      "species": "Ribes sanguineum",
-      "slug": "ribes-sanguineum",
-      "common_name": "Red-flowering Currant",
-      "taxon_id": 53435,
-      "taxon_url": "https://www.inaturalist.org/taxa/53435",
-      "photo_url": "https://static.inaturalist.org/photos/72387844/medium.jpg",
-      "status": "late",
-      "anomaly_days": 221.9,
-      "zones_used": 3,
-      "granularity": "zone",
-      "zones": [
-        {
-          "zone": "west-low",
-          "baseline_doy": 82.0,
-          "current_doy": null,
-          "anomaly_days": 244.0,
-          "status": "late",
-          "baseline_years": 9,
-          "current_obs": 0,
-          "has_current": false
-        },
-        {
-          "zone": "west-mid",
-          "baseline_doy": 115.2,
-          "current_doy": null,
-          "anomaly_days": 210.8,
-          "status": "late",
-          "baseline_years": 4,
-          "current_obs": 0,
-          "has_current": false
-        },
-        {
-          "zone": "east-mid",
-          "baseline_doy": 135.0,
-          "current_doy": null,
-          "anomaly_days": 191.0,
-          "status": "late",
-          "baseline_years": 5,
-          "current_obs": 0,
-          "has_current": false
-        }
-      ],
-      "current_obs_total": 0,
-      "has_current_data": false,
-      "current_year_observations": [],
-      "observation_count": 1400
-    },
-    {
       "species": "Claytonia sibirica",
       "slug": "claytonia-sibirica",
       "common_name": "Candy Flower",
@@ -1630,7 +1923,7 @@
       "taxon_url": "https://www.inaturalist.org/taxa/48227",
       "photo_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/494655644/medium.jpg",
       "status": "normal",
-      "anomaly_days": -3.87,
+      "anomaly_days": -3.84,
       "zones_used": 2,
       "granularity": "zone",
       "zones": [
@@ -1638,7 +1931,7 @@
           "zone": "east-low",
           "baseline_doy": 100.4,
           "current_doy": null,
-          "anomaly_days": 225.6,
+          "anomaly_days": 226.6,
           "status": "late",
           "baseline_years": 6,
           "current_obs": 0,

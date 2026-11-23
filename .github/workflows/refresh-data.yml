@@ -1,8 +1,11 @@
 name: Refresh Spring Data
 
+# Archived after the 2026 season: the daily schedule is disabled so the final
+# 2026 results are not overwritten (the script rolls to 2027 on Jan 1).
+# Re-add the schedule block to run again next spring.
 on:
-  schedule:
-    - cron: "17 13 * * *" # Daily at 13:17 UTC
+  # schedule:
+  #   - cron: "17 13 * * *" # Daily at 13:17 UTC
   workflow_dispatch:
 
 permissions:

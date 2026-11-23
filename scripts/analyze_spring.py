@@ -29,7 +29,7 @@ CURRENT_DATE = date.today()
 CURRENT_YEAR = CURRENT_DATE.year
 BASELINE_START_YEAR = CURRENT_YEAR - 9
 BASELINE_END_YEAR = CURRENT_YEAR - 1
-MAX_RECORDS_PER_SPECIES = 1400
+MAX_RECORDS_PER_SPECIES = 9800  # iNat API refuses page*per_page > 10000; observations are fetched oldest-first, so a low cap silently drops current-year data
 DEM_API_BASE = "https://api.opentopodata.org/v1/srtm90m"
 DEM_CACHE_FILENAME = "elevation_cache.json"
 DEM_COORD_PRECISION = 3
@@ -713,19 +713,19 @@ def main() -> None:
         photo_url = resolved["photo_url"]
         print(f"  - fetching observations (taxon {taxon_id})", flush=True)
         observations = fetch_species_observations(species, taxon_id)
-        if remaining_dem_lookups > 0:
-            new_lookups, filled = fill_missing_elevations_from_dem(
-                observations,
-                elevation_cache,
-                max_new_lookups=remaining_dem_lookups,
+        # Always apply cached elevations; only new API lookups are budgeted.
+        new_lookups, filled = fill_missing_elevations_from_dem(
+            observations,
+            elevation_cache,
+            max_new_lookups=max(0, remaining_dem_lookups),
+        )
+        remaining_dem_lookups -= new_lookups
+        if new_lookups or filled:
+            print(
+                f"  - DEM elevation: {filled} filled from cache/API, {new_lookups} new lookups "
+                f"(remaining budget {remaining_dem_lookups})",
+                flush=True,
             )
-            remaining_dem_lookups -= new_lookups
-            if new_lookups or filled:
-                print(
-                    f"  - DEM elevation: {filled} filled from cache/API, {new_lookups} new lookups "
-                    f"(remaining budget {remaining_dem_lookups})",
-                    flush=True,
-                )
         summary = summarize_species(
             species,
             common_name,
